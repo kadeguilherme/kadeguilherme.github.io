@@ -1,0 +1,14 @@
+$font-primary:'cursive';
+$font-secundary:'Roboto';
+$font-tamanho:26px;
+
+@import "abstract/reset";
+@import "abstract/variable";
+@import "layout/l-main";
+@import "layout/l-nav";
+
+:root{
+    @each $name, $color in $project-color {
+        --color-#{$name}: #{$color};
+        }
+}
