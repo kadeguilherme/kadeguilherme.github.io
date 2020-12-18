@@ -48,12 +48,16 @@ body{
         }
     }
 
+  
+
 header{
+    
     margin: 5px;  
     display: flex;
     padding: 8px;
     align-items: center;
     nav{
+      
         font-family:'Franklin Gothic Medium';
         font-size: 26px;
         display: flex;
@@ -71,12 +75,15 @@ header{
             transform: rotateX(-10px);
             transition: all 0.8s ease-in-out;
             z-index: -1;
-        }        
-    
+        }   
+        
+        
+       
     }
    
     //Botão
     .toggle{
+        z-index: 2;
         display: flex;
         border-radius: 60px;
         height: 24px;
@@ -103,15 +110,18 @@ header{
         border: red solid 1px;
     
         .b-menu{
+         
             cursor: pointer;
             width: 60px;
             height: 60px;
             border-radius: 50%;
             
+         
+            
             .b-bun{
                 position: relative; 
                 background: black; 
-                
+                transition: all .4s ease;
                 &--top{
                 top: 20px;
                 left: 10px;
@@ -133,9 +143,12 @@ header{
                 height: 3px;
                     }       
              }
+
+           
         }
 
         .b-menu{
+          
             &.open{
                 .b-bun--top{
                     top: 28px;
@@ -150,7 +163,16 @@ header{
                     transform: rotate(-45deg);
                 }
 
-           
+                .tab{
+                    z-index: 2;
+                    height: 100vh;
+                    width: 33vh;
+                    margin-left: -135px;
+                    margin-top: -23px;
+                    background: yellowgreen;
+                   
+              
+                }
 
             }
         }

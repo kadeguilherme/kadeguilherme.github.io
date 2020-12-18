@@ -18,101 +18,104 @@ body {
 .dark .conteudo #info h1 {
   color: var(--color-txt); }
 
-main .conteudo {
-  display: flex;
-  min-height: 85vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  justify-content: space-around; }
-  main .conteudo #info {
+main {
+  display: relative; }
+  main .conteudo {
     display: flex;
-    flex-direction: column;
-    margin-top: 120px;
-    margin-right: 50px;
-    margin-left: 120px;
-    margin-bottom: 50px;
-    padding: 20px; }
-    main .conteudo #info p {
-      font-size: 20px;
-      color: rgba(22, 22, 22, 0.672); }
-      main .conteudo #info p img {
-        width: 23px;
-        vertical-align: bottom; }
-    main .conteudo #info h1 {
-      font-size: 60px; }
-      main .conteudo #info h1 p {
-        display: inline;
-        font-size: 28px; }
-    main .conteudo #info #git {
+    min-height: 85vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-around; }
+    main .conteudo #info {
+      z-index: -1;
       display: flex;
-      justify-content: left;
-      margin-top: 22px;
-      padding-left: 6px; }
-      main .conteudo #info #git button {
-        cursor: pointer;
-        font-family: 'Segoe UI';
-        border-color: transparent;
-        font-weight: bold;
+      flex-direction: column;
+      margin-top: 120px;
+      margin-right: 50px;
+      margin-left: 120px;
+      margin-bottom: 50px;
+      padding: 20px; }
+      main .conteudo #info p {
+        font-size: 20px;
+        color: rgba(22, 22, 22, 0.672); }
+        main .conteudo #info p img {
+          width: 23px;
+          vertical-align: bottom; }
+      main .conteudo #info h1 {
+        font-size: 60px; }
+        main .conteudo #info h1 p {
+          display: inline;
+          font-size: 28px; }
+      main .conteudo #info #git {
         display: flex;
-        font-size: 13px;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        width: 160px;
-        height: 45px;
-        border-radius: 30px;
-        background-color: var(--color-btn);
-        border-width: 1px; }
-      main .conteudo #info #git img {
-        height: 28px;
-        width: 28px; }
-  main .conteudo #imagem {
-    padding-right: 20px;
-    margin-top: -80px; }
-    main .conteudo #imagem svg {
-      height: 100% !important;
-      height: 600px !important;
-      padding: 0px;
-      margin: 0px; }
-  @media (max-width: 576px) {
-    main .conteudo {
-      justify-content: left;
-      align-items: flex-start; }
-      main .conteudo #info {
-        margin-top: 40px;
-        margin-left: 15px; }
-        main .conteudo #info p {
-          font-size: 20px; }
-          main .conteudo #info p img {
-            width: 19px;
-            vertical-align: middle;
-            padding-left: 2px; }
-        main .conteudo #info h1 {
-          font-size: 40px; }
-        main .conteudo #info #git {
-          margin: auto;
-          padding-top: 30px; }
-      main .conteudo #imagem {
-        display: none; } }
-main #manutencao {
-  padding: 0px;
-  margin: auto;
-  display: flex; }
-  main #manutencao h1 {
+        justify-content: left;
+        margin-top: 22px;
+        padding-left: 6px; }
+        main .conteudo #info #git button {
+          cursor: pointer;
+          font-family: 'Segoe UI';
+          border-color: transparent;
+          font-weight: bold;
+          display: flex;
+          font-size: 13px;
+          justify-content: space-around;
+          align-items: center;
+          color: white;
+          width: 160px;
+          height: 45px;
+          border-radius: 30px;
+          background-color: var(--color-btn);
+          border-width: 1px; }
+        main .conteudo #info #git img {
+          height: 28px;
+          width: 28px; }
+    main .conteudo #imagem {
+      padding-right: 20px;
+      margin-top: -80px; }
+      main .conteudo #imagem svg {
+        height: 100% !important;
+        height: 600px !important;
+        padding: 0px;
+        margin: 0px; }
+    @media (max-width: 576px) {
+      main .conteudo {
+        justify-content: left;
+        align-items: flex-start; }
+        main .conteudo #info {
+          margin-top: 40px;
+          margin-left: 15px; }
+          main .conteudo #info p {
+            font-size: 20px; }
+            main .conteudo #info p img {
+              width: 19px;
+              vertical-align: middle;
+              padding-left: 2px; }
+          main .conteudo #info h1 {
+            font-size: 40px; }
+          main .conteudo #info #git {
+            margin: auto;
+            padding-top: 30px; }
+        main .conteudo #imagem {
+          display: none; } }
+  main #manutencao {
     padding: 0px;
-    margin-top: 40px;
-    margin-left: 80px;
-    font-size: 45px;
-    position: absolute;
-    font-family: monospace; }
-  main #manutencao svg {
-    width: 100% !important;
-    height: 453px !important; }
-  @media (max-width: 576px) {
+    margin: auto;
+    display: flex; }
     main #manutencao h1 {
-      padding-left: 35px;
-      width: 70vh;
-      font-size: 32px;
-      display: none; } }
+      padding: 0px;
+      margin-top: 40px;
+      margin-left: 80px;
+      font-size: 45px;
+      position: absolute;
+      font-family: monospace; }
+    main #manutencao svg {
+      width: 100% !important;
+      height: 453px !important; }
+    @media (max-width: 576px) {
+      main #manutencao h1 {
+        padding-left: 35px;
+        width: 70vh;
+        font-size: 32px;
+        display: none; } }
 
 body {
   transition: all 0.6s ease-in;
@@ -165,6 +168,7 @@ header {
       transition: all 0.8s ease-in-out;
       z-index: -1; }
   header .toggle {
+    z-index: 2;
     display: flex;
     border-radius: 60px;
     height: 24px;
@@ -193,7 +197,8 @@ header {
         border-radius: 50%; }
         header .b-menu .b-bun {
           position: relative;
-          background: black; }
+          background: black;
+          transition: all .4s ease; }
           header .b-menu .b-bun--top {
             top: 20px;
             left: 10px;
@@ -218,6 +223,13 @@ header {
         top: 22px;
         left: 9px;
         transform: rotate(-45deg); }
+      header .b-menu.open .tab {
+        z-index: 2;
+        height: 100vh;
+        width: 33vh;
+        margin-left: -135px;
+        margin-top: -23px;
+        background: yellowgreen; }
       header nav {
         display: none; } }
 

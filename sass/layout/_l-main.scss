@@ -22,8 +22,10 @@
 }
 
 main{
-   
+
+    display: relative;
     .conteudo{ 
+        
         display: flex;
         min-height: 85vh;
 
@@ -31,8 +33,9 @@ main{
         justify-content: space-around;
         
         //   border: 1px solid rgb(180, 70, 70);
-      
+        
         #info{
+            z-index: -1;
 
             //  border: 1px solid steelblue;
             display: flex;
