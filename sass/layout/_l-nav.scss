@@ -63,8 +63,9 @@ header{
     display: flex;
     padding: 8px;
     align-items: center;
+   
     nav{
-      
+        
         font-family:'Franklin Gothic Medium';
         font-size: 26px;
         display: flex;
@@ -111,12 +112,11 @@ header{
             transition:  width 0.4s cubic-bezier(.07,.14,.73,.97);  
         }
     }
-    
+   
     @media(max-width: 576px){
         justify-content: space-between;
 
         .b-menu{
-         
             cursor: pointer;
             width: 60px;
             height: 60px;
@@ -153,10 +153,13 @@ header{
            
         }
 
-        .b-menu{
-          
+        .b-menu{ 
+     
+           
             &.open{
+
                 .b-bun--top{
+                    z-index: 1;
                     top: 28px;
                     transform: rotate(45deg);
                 }
@@ -164,6 +167,7 @@ header{
                     opacity: 0;
                 }
                 .b-bun--bottom{
+                    z-index: 1;
                     top: 22px;
                     left: 9px;
                     transform: rotate(-45deg);
@@ -177,7 +181,7 @@ header{
                     margin-top: -23px;
                     background: #FFCC3E;
                     box-shadow: -6px 0px 13px rgba(35, 35, 35 , .19);
-              
+                    
                 }
 
             }
@@ -187,8 +191,7 @@ header{
             display: none;
         }
 
-        nav{
-       
+        nav{    
             &.open{
                 position: absolute;
                 display: flex;

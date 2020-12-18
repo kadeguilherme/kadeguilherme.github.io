@@ -217,11 +217,13 @@ header {
             width: 40px;
             height: 3px; }
       header .b-menu.open .b-bun--top {
+        z-index: 1;
         top: 28px;
         transform: rotate(45deg); }
       header .b-menu.open .b-bun--mid {
         opacity: 0; }
       header .b-menu.open .b-bun--bottom {
+        z-index: 1;
         top: 22px;
         left: 9px;
         transform: rotate(-45deg); }
