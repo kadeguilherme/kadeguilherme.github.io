@@ -27,6 +27,13 @@ body{
                 .b-bun{
                     background: white;
                 }
+                &.open{
+                    .tab{
+                            background: #101010;
+                            box-shadow: -6px 0px 13px rgba(255, 244, 244, 0.30);
+                    
+                        }
+                }
             }
         
         }
@@ -107,8 +114,7 @@ header{
     
     @media(max-width: 576px){
         justify-content: space-between;
-        border: red solid 1px;
-    
+
         .b-menu{
          
             cursor: pointer;
@@ -169,17 +175,41 @@ header{
                     width: 33vh;
                     margin-left: -135px;
                     margin-top: -23px;
-                    background: yellowgreen;
-                   
+                    background: #FFCC3E;
+                    box-shadow: -6px 0px 13px rgba(35, 35, 35 , .19);
               
                 }
 
             }
         }
     
+        nav{
+            display: none;
+        }
 
-    nav{
-        display: none;
+        nav{
+       
+            &.open{
+                position: absolute;
+                display: flex;
+                margin: 0px;
+                z-index: 2;
+                flex-direction: column;
+                margin-left: 180px;
+                margin-top: 350px;
+                li{
+                    padding-top: 20px;
+                    }
+                a{
+                    font-size: 30px;
+                    margin: 0px;
+                }
+    
+                .barra{
+                    display: none;
+                    }
+    
+                }
         }
     
     }
