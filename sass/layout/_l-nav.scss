@@ -22,6 +22,12 @@ body{
                 box-shadow: 2px 2px 3px rgba(94, 94, 94, 0.871);
                 }
             }
+
+            .b-menu{
+                .b-bun{
+                    background: white;
+                }
+            }
         
         }
 
@@ -45,7 +51,7 @@ body{
 header{
     margin: 5px;  
     display: flex;
-    padding: 20px;
+    padding: 8px;
     align-items: center;
     nav{
         font-family:'Franklin Gothic Medium';
@@ -65,12 +71,11 @@ header{
             transform: rotateX(-10px);
             transition: all 0.8s ease-in-out;
             z-index: -1;
-        }
-        
-        
+        }        
     
     }
-
+   
+    //Botão
     .toggle{
         display: flex;
         border-radius: 60px;
@@ -94,6 +99,63 @@ header{
     }
     
     @media(max-width: 576px){
+        justify-content: space-between;
+        border: red solid 1px;
+    
+        .b-menu{
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            
+            .b-bun{
+                position: relative; 
+                background: black; 
+                
+                &--top{
+                top: 20px;
+                left: 10px;
+                width:40px;
+                height: 3px;
+                    }
+    
+                &--mid{
+                top: 26px;
+                left: 10px;
+                width:40px;
+                height: 3px;
+                    }
+    
+                &--bottom{
+                top: 32px;
+                left: 10px;
+                width:40px;
+                height: 3px;
+                    }       
+             }
+        }
+
+        .b-menu{
+            &.open{
+                .b-bun--top{
+                    top: 28px;
+                    transform: rotate(45deg);
+                }
+                .b-bun--mid{
+                    opacity: 0;
+                }
+                .b-bun--bottom{
+                    top: 22px;
+                    left: 9px;
+                    transform: rotate(-45deg);
+                }
+
+           
+
+            }
+        }
+    
+
     nav{
         display: none;
         }

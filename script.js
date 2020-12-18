@@ -1,4 +1,13 @@
 body = document.body
+burguerMenu = document.getElementsByClassName('b-menu')[0];
+
+burguerMenu.addEventListener(
+    'click',
+    function(){
+    burguerMenu.classList.toggle('open');
+    console.log("Trocou");
+    }
+    );
 
 document.querySelector('[data-switch-dark]').addEventListener(
     'click',

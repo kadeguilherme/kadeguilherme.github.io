@@ -131,6 +131,8 @@ body {
       width: 75px;
       transition: width 0.4s cubic-bezier(0.07, 0.14, 0.73, 0.97);
       box-shadow: 2px 2px 3px rgba(94, 94, 94, 0.871); }
+  .dark header .b-menu .b-bun {
+    background: white; }
   .dark #sun {
     transform: rotateX(90deg);
     transition: transform 0.4s cubic-bezier(0.64, 0.32, 0.56, 0.64); }
@@ -144,7 +146,7 @@ body {
 header {
   margin: 5px;
   display: flex;
-  padding: 20px;
+  padding: 8px;
   align-items: center; }
   header nav {
     font-family: 'Franklin Gothic Medium';
@@ -181,8 +183,43 @@ header {
       box-shadow: 2px 1px 7px #fbff04;
       transition: width 0.4s cubic-bezier(0.07, 0.14, 0.73, 0.97); }
   @media (max-width: 576px) {
-    header nav {
-      display: none; } }
+    header {
+      justify-content: space-between;
+      border: red solid 1px; }
+      header .b-menu {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; }
+        header .b-menu .b-bun {
+          position: relative;
+          background: black; }
+          header .b-menu .b-bun--top {
+            top: 20px;
+            left: 10px;
+            width: 40px;
+            height: 3px; }
+          header .b-menu .b-bun--mid {
+            top: 26px;
+            left: 10px;
+            width: 40px;
+            height: 3px; }
+          header .b-menu .b-bun--bottom {
+            top: 32px;
+            left: 10px;
+            width: 40px;
+            height: 3px; }
+      header .b-menu.open .b-bun--top {
+        top: 28px;
+        transform: rotate(45deg); }
+      header .b-menu.open .b-bun--mid {
+        opacity: 0; }
+      header .b-menu.open .b-bun--bottom {
+        top: 22px;
+        left: 9px;
+        transform: rotate(-45deg); }
+      header nav {
+        display: none; } }
 
 #sun {
   width: 23px;
