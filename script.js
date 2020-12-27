@@ -2,13 +2,14 @@ body = document.body
 burguerMenu = document.querySelector('.b-menu');
 main= document.querySelector('main');
 nav = document.querySelector('nav');
+tab = document.querySelector('.tab');
 
 burguerMenu.addEventListener(
     'click',
     function(){
     burguerMenu.classList.toggle('open');
     nav.classList.toggle('open');
-
+    tab.classList.toggle('open');
         }
     );
 
@@ -18,6 +19,7 @@ burguerMenu.addEventListener(
         if(nav.classList.contains('open')){   
             burguerMenu.classList.remove('open');
             nav.classList.remove('open');
+            tab.classList.remove('open');
          
         }
             
@@ -57,7 +59,7 @@ document.querySelector('[data-switch-dark-imagem]').addEventListener(
 
 const barra = document.querySelector(".barra");
 const links = document.querySelectorAll("nav a");
-const colors = ["deepskyblue", "firebrick", "gold", "magenta", "black", "darkblue", "coral","Purple", "navy"
+const colors = ["deepskyblue", "firebrick", "magenta", "black", "darkblue", "coral","Purple", "navy"
 ];
 
 var him = 0;
@@ -103,7 +105,7 @@ function linkSelecionado(){
 
     let width = this.getBoundingClientRect().width;
     let height = this.getBoundingClientRect().height;
-    let left = this.getBoundingClientRect().left;
+    let left = -this.getBoundingClientRect().left ;
     let top = this.getBoundingClientRect().top;
     let color = colors[Math.floor(Math.random() * colors.length)];
     colorHim = color;
@@ -150,7 +152,7 @@ function mouseleaveFunc(){
         }
     }
   
-    links[him].parentNode.classList.add("active");
+    links[him].parentNode.classList.add("ativado");
 
     links[him].style.opacity = "1";
 
