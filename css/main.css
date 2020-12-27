@@ -149,7 +149,19 @@ main {
         font-size: 32px; }
       main #sobre p {
         margin-left: 5%;
-        margin-right: 4%; } }
+        margin-right: 4%; }
+      main #sobre .botoes {
+        margin-bottom: 100px; }
+        main #sobre .botoes #linkedin button {
+          font-size: 17px;
+          width: 95px;
+          height: 35px;
+          border-radius: 10px; }
+        main #sobre .botoes #cv button {
+          font-size: 17px;
+          width: 95px;
+          height: 35px;
+          border-radius: 10px; } }
 
 body {
   transition: all 0.6s ease-in;

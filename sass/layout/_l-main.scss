@@ -206,8 +206,28 @@ main{
                     margin-left: 5%;
                     margin-right:4%;
                  }
+                 .botoes{
+                     margin-bottom: 100px;
+                    #linkedin{
+                        button{
+                            font-size: 17px;
+                            width: 95px;
+                            height: 35px;
+                            border-radius: 10px;
+                        } 
+                    }  
+
+                    #cv{
+                        button{
+                            font-size: 17px;
+                            width: 95px;
+                            height: 35px;
+                            border-radius: 10px;
+                        } 
+                    }  
+                }
              }
-         
+             
     }
   
 
