@@ -133,7 +133,6 @@ function mouseenterFunc() {
     const width = this.getBoundingClientRect().width;
     const height = this.getBoundingClientRect().height;
     const left = this.getBoundingClientRect().left;
-    console.log( barra.style.left);
     const top = this.getBoundingClientRect().top;
     let color = colors[Math.floor(Math.random() * colors.length)];
     

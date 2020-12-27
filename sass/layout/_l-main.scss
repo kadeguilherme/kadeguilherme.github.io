@@ -9,14 +9,18 @@
         #info{
             p{
                 
-            color: rgba(223, 223, 223, 0.816);
+            color:  var(--color-txt);
             }
             h1{
                 color: var(--color-txt);
             }
         }
-        
-        
+    }
+    #sobre{
+        background-color: #212121;
+        p{
+            color:  var(--color-txt);
+        }
     }
    
 }
@@ -33,7 +37,7 @@ main{
         justify-content: space-around;
         
         #info{
-            z-index: -1;
+
             display: flex;
             flex-direction: column;
             margin-top: 120px;
@@ -78,7 +82,7 @@ main{
                     width: 160px;
                     height: 45px;
                     border-radius: 30px;
-                    background-color: var(--color-btn);
+                    background-color: var(--color-btn-git);
                     border-width: 1px;
                 }
 
@@ -108,6 +112,7 @@ main{
             justify-content: left;
             align-items: flex-start;
             #info{
+                margin-bottom: 20px;
                 margin-top: 40px;
                 margin-left: 15px;
                 p{
@@ -135,32 +140,71 @@ main{
     }
     
     #sobre{
-       background: #FFDE66;       
+       background: #FFDE66; 
+       display: flex;
+       flex-direction: column;      
         h1{
             padding-top: 20px;
             padding-bottom: 20px;
-            
-            margin-left: 4%;
+            margin-left: 10%;
             font-size: 45px;
             font-family: monospace;
         }     
         p{
             display: flex;
-            margin-left: 4%;
-            margin-right:10%;
-            font-size: 18px;
-           
+            margin-left: 10%;
+            margin-right:25%;
+            font-size: 20px;
            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .botoes{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            align-self:center;
+            #linkedin{
+                padding-right: 80px;
+                button{
+                    cursor: pointer;
+                    font-size: 20px;
+                    background-color:var(--color-btn-link);
+                    color: white;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 50px;
+                    border-color: transparent;
+                }                
+            }
+            
+          
+           
+            #cv{
+                button{
+                    cursor: pointer;
+                    font-size: 20px;
+                    background-color:var(--color-btn-cv);
+                    color: white;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 50px;
+                    border-color: transparent;
+                }
+                
+            }
+        
         }
  
 
         @media(max-width: 576px){
                  h1{
-                     
-                     width: 70vh;
+                    margin-left: 5%;
                      font-size: 32px;
-                    
-                     
+                 }
+                 p{
+                    margin-left: 5%;
+                    margin-right:4%;
                  }
              }
          
