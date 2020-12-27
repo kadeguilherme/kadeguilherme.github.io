@@ -32,6 +32,7 @@ document.querySelector('[data-switch-dark]').addEventListener(
         document.body.classList.toggle('dark');
 
         if(body.classList.contains('dark')){
+            console.log("1");
             animationImage.playSegments([0,55]);
          
         }else{
@@ -47,7 +48,7 @@ document.querySelector('[data-switch-dark-imagem]').addEventListener(
         document.body.classList.toggle('dark');
       
         if(body.classList.contains('dark')){
-          
+            console.log("1");
             animationImage.playSegments([0,55]);
         }else{
               
@@ -105,7 +106,7 @@ function linkSelecionado(){
 
     let width = this.getBoundingClientRect().width;
     let height = this.getBoundingClientRect().height;
-    let left = -this.getBoundingClientRect().left ;
+    let left = -this.getBoundingClientRect().left * -1;
     let top = this.getBoundingClientRect().top;
     let color = colors[Math.floor(Math.random() * colors.length)];
     colorHim = color;
@@ -132,6 +133,7 @@ function mouseenterFunc() {
     const width = this.getBoundingClientRect().width;
     const height = this.getBoundingClientRect().height;
     const left = this.getBoundingClientRect().left;
+    console.log( barra.style.left);
     const top = this.getBoundingClientRect().top;
     let color = colors[Math.floor(Math.random() * colors.length)];
     
@@ -184,16 +186,6 @@ let animationImage = bodymovin.loadAnimation({
 
 
 
-//MANUTENÇÃO SCRIPT
-var manutencao = document.querySelector("#manutencao");
 
-let animationObject = bodymovin.loadAnimation({
-    container: manutencao,
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    autoloadSegments: false,
-    path: 'img/manutencao.json'
-})
 
 
