@@ -32,7 +32,6 @@ document.querySelector('[data-switch-dark]').addEventListener(
         document.body.classList.toggle('dark');
 
         if(body.classList.contains('dark')){
-            console.log("1");
             animationImage.playSegments([0,55]);
          
         }else{
@@ -171,6 +170,49 @@ function mouseleaveFunc(){
     
     barra.style.transform = "none";
 }
+
+
+//ANIMATION SCRIPT
+var manutencao = document.querySelector("#manutencao");
+
+bodymovin.loadAnimation({
+    container: manutencao,
+    renderer:'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/manutencao.json'
+})
+
+var construcao = document.querySelector(".construcao");
+
+bodymovin.loadAnimation({
+    container: construcao,
+    renderer:'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/construcao.json'
+})
+
+var construcao1 = document.querySelector(".construcao1");
+
+bodymovin.loadAnimation({
+    container: construcao1,
+    renderer:'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/construcao.json'
+})
+
+var construcao2 = document.querySelector(".construcao2");
+
+bodymovin.loadAnimation({
+    container: construcao2,
+    renderer:'svg',
+    loop: true,
+    autoplay: true,
+    path: 'img/construcao.json'
+})
+
 
 //ANIMATION SCRIPT
 var animacao = document.querySelector("#imagem");

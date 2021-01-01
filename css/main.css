@@ -9,6 +9,8 @@ body {
   width: 100%;
   height: 100%; }
 
+.dark p {
+  color: white; }
 .dark a {
   text-decoration: none; }
 .dark h1 {
@@ -21,9 +23,30 @@ body {
   background-color: #212121; }
   .dark #sobre p {
     color: var(--color-txt); }
+  .dark #sobre .botoes #linkedin button {
+    background-color: black; }
+  .dark #sobre .botoes #cv button {
+    background-color: black; }
+.dark #projetos .projetos-container {
+  box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.85); }
+.dark #conhecimentos .projetos-container {
+  box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.659); }
+.dark footer {
+  background-color: black;
+  background-image: linear-gradient(black, black); }
 
 main {
   display: relative; }
+  main h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    font-size: 45px;
+    font-family: monospace; }
+  @media (max-width: 576px) {
+    main h1 {
+      margin-left: 5%;
+      font-size: 32px; } }
   main .conteudo {
     display: flex;
     min-height: 85vh;
@@ -45,6 +68,9 @@ main {
           width: 23px;
           vertical-align: bottom; }
       main .conteudo #info h1 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 0;
         font-size: 60px; }
         main .conteudo #info h1 p {
           display: inline;
@@ -105,12 +131,6 @@ main {
     background: #FFDE66;
     display: flex;
     flex-direction: column; }
-    main #sobre h1 {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-left: 10%;
-      font-size: 45px;
-      font-family: monospace; }
     main #sobre p {
       display: flex;
       margin-left: 10%;
@@ -144,9 +164,6 @@ main {
         border-radius: 50px;
         border-color: transparent; }
     @media (max-width: 576px) {
-      main #sobre h1 {
-        margin-left: 5%;
-        font-size: 32px; }
       main #sobre p {
         margin-left: 5%;
         margin-right: 4%; }
@@ -155,13 +172,84 @@ main {
         main #sobre .botoes #linkedin button {
           font-size: 17px;
           width: 95px;
-          height: 35px;
+          height: 40px;
           border-radius: 10px; }
         main #sobre .botoes #cv button {
           font-size: 17px;
           width: 95px;
-          height: 35px;
+          height: 40px;
           border-radius: 10px; } }
+  main #projetos {
+    margin-top: 20px;
+    margin-bottom: 100px; }
+    main #projetos .projetos-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      background-color: white;
+      width: 300px;
+      height: 300px;
+      justify-content: center;
+      box-shadow: 2px 2px 10px rgba(55, 55, 55, 0.604); }
+      main #projetos .projetos-container #manutencao {
+        display: flex;
+        align-self: center;
+        width: 50%;
+        height: 50%; }
+      main #projetos .projetos-container h3 {
+        display: flex;
+        align-self: center; }
+    @media (max-width: 576px) {
+      main #projetos .projetos-container {
+        width: 250px;
+        height: 250px; } }
+  main #conhecimentos {
+    display: flex;
+    flex-direction: row; }
+    main #conhecimentos .projetos-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 150px;
+      background-color: white;
+      width: 250px;
+      height: 250px;
+      box-shadow: 2px 2px 10px rgba(55, 55, 55, 0.604); }
+      main #conhecimentos .projetos-container .construcao2 {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        height: 100%; }
+      main #conhecimentos .projetos-container .construcao1 {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        height: 100%; }
+      main #conhecimentos .projetos-container .construcao {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        height: 100%; }
+      main #conhecimentos .projetos-container h3 {
+        display: flex;
+        align-self: center; }
+    @media (max-width: 576px) {
+      main #conhecimentos {
+        flex-wrap: wrap;
+        justify-content: center; }
+        main #conhecimentos .projetos-container {
+          margin-top: 20px;
+          margin-left: 10px;
+          width: 200px;
+          height: 200px; } }
+
+footer {
+  margin-top: 60px;
+  height: 60px;
+  background-image: linear-gradient(#FFD151, #FFB24D);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold; }
 
 body {
   transition: all 0.6s ease-in;
