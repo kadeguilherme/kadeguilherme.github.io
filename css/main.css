@@ -180,8 +180,8 @@ main {
           height: 40px;
           border-radius: 10px; } }
   main #projetos {
-    margin-top: 20px;
-    margin-bottom: 100px; }
+    margin-top: 10px;
+    margin-bottom: 40px; }
     main #projetos .projetos-container {
       display: flex;
       flex-direction: column;
@@ -209,6 +209,7 @@ main {
     main #conhecimentos .projetos-container {
       display: flex;
       flex-direction: column;
+      margin-top: 5px;
       margin-left: 150px;
       background-color: white;
       width: 250px;
@@ -383,9 +384,9 @@ header {
         display: flex;
         align-self: flex-start;
         right: 0px;
-        top: 0px;
+        top: -10px;
         height: 100vh;
-        width: 33vh;
+        width: 35vh;
         background: #FFCC3E;
         box-shadow: -6px 0px 13px rgba(35, 35, 35, 0.19); }
         header .tab.open nav {

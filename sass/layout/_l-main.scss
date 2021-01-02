@@ -283,8 +283,8 @@ main{
 
     
     #projetos{
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom:40px;
         .projetos-container{
             display: flex;
             flex-direction: column;
@@ -319,10 +319,11 @@ main{
     #conhecimentos{
         display: flex;
         flex-direction: row;
-
+        
         .projetos-container{
             display: flex;
             flex-direction: column;
+            margin-top:5px;
            margin-left: 150px;
             background-color: white;
             width: 250px;
