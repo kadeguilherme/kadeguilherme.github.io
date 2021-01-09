@@ -27,13 +27,10 @@ body {
     background-color: black; }
   .dark #sobre .botoes #cv button {
     background-color: black; }
-.dark #projetos .projetos-container {
-  box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.85); }
-.dark #conhecimentos .projetos-container {
-  box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.659); }
 .dark footer {
   background-color: black;
-  background-image: linear-gradient(black, black); }
+  background-image: linear-gradient(black, black);
+  font-family: 'cursive'; }
 
 main {
   display: relative; }
@@ -52,7 +49,6 @@ main {
   main .conteudo {
     display: flex;
     min-height: 85vh;
-    margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-around; }
     main .conteudo #info {
@@ -206,37 +202,20 @@ main {
         height: 250px; } }
   main #conhecimentos {
     display: flex;
-    flex-direction: row; }
-    main #conhecimentos .projetos-container {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      margin-left: 150px;
-      background-color: white;
-      width: 250px;
-      height: 250px; }
-      main #conhecimentos .projetos-container .construcao2 {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        height: 100%; }
-      main #conhecimentos .projetos-container .construcao1 {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        height: 100%; }
-      main #conhecimentos .projetos-container .construcao {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        height: 100%; }
-      main #conhecimentos .projetos-container h3 {
-        display: flex;
-        align-self: center; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center; }
+    main #conhecimentos .imagens {
+      width: 4rem;
+      height: 4rem;
+      padding: 20px; }
     @media (max-width: 576px) {
       main #conhecimentos {
+        width: 100%;
         flex-wrap: wrap;
-        justify-content: center; }
+        align-self: center; }
         main #conhecimentos .projetos-container {
           margin-top: 20px;
           margin-left: 10px;
@@ -285,6 +264,11 @@ body {
   .dark .barra {
     border-bottom: transparent; }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 header {
   position: relative;
   margin-top: 5px;
@@ -332,6 +316,7 @@ header {
       z-index: 6;
       margin-top: 0px;
       height: 45px;
+      transition: all 1s;
       width: 100%;
       box-shadow: -6px 0px 13px rgba(0, 0, 0, 0.18);
       position: fixed;
@@ -395,9 +380,10 @@ header {
               left: 9px;
               transform: rotate(-45deg); }
       header.show-menu {
-        height: 35vh; }
+        height: 45vh; }
         header.show-menu nav {
-          display: flex; } }
+          display: flex;
+          animation: slideIn 1.5s; } }
 
 #sun {
   width: 23px;

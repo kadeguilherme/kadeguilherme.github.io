@@ -42,25 +42,28 @@
         }
     }
    
-    #projetos{
-        .projetos-container{
-        box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.85);
-        }
-    }
-
-    #conhecimentos{
-        .projetos-container{
-            box-shadow: 1px 1px 15px rgba(220, 220, 220, 0.659);
-            }
-    }
+  
     
     footer{
         background-color: black;
         background-image: linear-gradient(black,black);
+        font-family: 'cursive';
      
     }
 
 }
+
+@keyframes slideIn{
+    0%{
+
+    }
+
+    100%{
+
+    }
+
+
+  }
 
 main{
     
@@ -87,7 +90,6 @@ main{
         
         display: flex;
         min-height: 85vh;
-        margin-bottom: 40px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         justify-content: space-around;
         
@@ -319,45 +321,20 @@ main{
     #conhecimentos{
         display: flex;
         flex-direction: row;
-        
-        .projetos-container{
-            display: flex;
-            flex-direction: column;
-            margin-top:5px;
-           margin-left: 150px;
-            background-color: white;
-            width: 250px;
-            height: 250px;
-        
- 
-            .construcao2{
-                display: flex;
-                align-self: center;
-                width: 100%;
-                height: 100%;
-            }
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
 
-            .construcao1{
-                display: flex;
-                align-self: center;
-                width: 100%;
-                height: 100%;
-            }
-            .construcao{
-                display: flex;
-                align-self: center;
-                width: 100%;
-                height: 100%;
-            }
-            h3{
-                display: flex;
-                align-self: center;
-               
-            }
+        justify-content: center;
+        .imagens{
+            width: 4rem; height: 4rem;
+            padding: 20px;
         }
+        
         @media(max-width: 576px){
+            width: 100%;
             flex-wrap: wrap;
-            justify-content: center;
+            align-self: center;
             .projetos-container{
                 margin-top: 20px;
                 margin-left: 10px; 
