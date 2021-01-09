@@ -13,6 +13,12 @@ body{
         }
 
         header{
+            @media(max-width: 576px) {
+          
+            background-color:#444346;
+            box-shadow: -6px 0px 13px rgba(250, 250, 250, 0.43);
+           
+            }
             .toggle{
                 border: 1px solid #131313;
                 box-shadow: 1px 1px 4px rgba(250, 250, 250, 0.85);
@@ -24,24 +30,17 @@ body{
                 }
             }
 
-            .b-menu{
-                .b-bun{
-                    background: white;
+            
+            .b-menu-container{
+                
+                .b-menu{
+                    .b-bun{
+                        background: white;
+                    }
+                  
                 }
-                &.open{
-                    .tab{
-                            background: #1f1f1f;
-                            box-shadow: -3px 0px 16px rgba(241, 241, 241, 0.2);
-                    
-                        }
-                }
-            }
-
-            .tab{
-                &.open{
-                    background: rgb(24, 24, 24);
-                    box-shadow: -2px 0px 10px rgba(220, 220, 220, 0.659);
-                }
+                 
+               
             }
         
         }
@@ -77,15 +76,13 @@ body{
   }
 
 header{
+
     position: relative;
     margin-top: 5px;  
     display: flex;
     padding: 8px;
     align-items: center;
-   .tab{
-       display: none;
-       
-   }
+
     nav{
         
         font-family:'Franklin Gothic Medium';
@@ -136,14 +133,45 @@ header{
     }
  
     @media(max-width: 576px) {
+        background: #FFCC3E;
+        z-index: 6;
+        margin-top: 0px;
+        height: 45px;
+        width: 100%;
+        box-shadow: -6px 0px 13px rgba(0, 0, 0, 0.18);
+        position: fixed;
         justify-content: space-between;
+      
+        .toggle{
+            align-self: start;
+            margin-top: 10px;
+        }
+        
         nav{
             display: none;
-        }
-        .b-menu{
-            nav{
-                display: none;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            margin: auto;
+            padding-top: 40px;
+            li{
+                margin-bottom: 20px;
             }
+          
+        .barra{
+            display: none;
+           
+        }
+        }
+
+        .b-menu-container{
+            display: flex;
+            align-self: start;
+            margin-right: 20px;
+            margin-top: -5px;
+        .b-menu{
+           
+         
             cursor: pointer;
             width: 60px;
             height: 60px;
@@ -181,8 +209,6 @@ header{
             position: relative;
             &.open{
                 z-index: 2;
- 
-
                 .b-bun--top{
                     z-index: 1;
                     top: 28px;
@@ -201,37 +227,16 @@ header{
                 
             }
         }
-        
-        .tab{
-            display: none;
-        }
+       
+    }
 
-        .tab{
-            &.open{
-                z-index: 1;
-                position: absolute;
-                display: flex;
-                align-self: flex-start;
-                right: 0px;
-                top: -10px;
-                height: 100vh;
-                width: 35vh;
-                background: #FFCC3E;
-                box-shadow: -6px 0px 13px rgba(35, 35, 35 , .19);
-                nav{    
-                    display: flex;
-                    flex-direction: column;
-                    flex-grow: 1;
-                    li{
-                        padding: 10px;
-                    }
-                  }
-            }
+    &.show-menu{
+        height: 35vh;
+        nav{
+            display: flex;
+            
         }
-    
-     
-
-      
+    }
     
     }
     

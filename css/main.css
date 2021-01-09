@@ -44,9 +44,11 @@ main {
     font-size: 45px;
     font-family: monospace; }
   @media (max-width: 576px) {
-    main h1 {
-      margin-left: 5%;
-      font-size: 32px; } }
+    main {
+      padding-top: 50px; }
+      main h1 {
+        margin-left: 5%;
+        font-size: 32px; } }
   main .conteudo {
     display: flex;
     min-height: 85vh;
@@ -189,8 +191,7 @@ main {
       background-color: white;
       width: 300px;
       height: 300px;
-      justify-content: center;
-      box-shadow: 2px 2px 10px rgba(55, 55, 55, 0.604); }
+      justify-content: center; }
       main #projetos .projetos-container #manutencao {
         display: flex;
         align-self: center;
@@ -213,8 +214,7 @@ main {
       margin-left: 150px;
       background-color: white;
       width: 250px;
-      height: 250px;
-      box-shadow: 2px 2px 10px rgba(55, 55, 55, 0.604); }
+      height: 250px; }
       main #conhecimentos .projetos-container .construcao2 {
         display: flex;
         align-self: center;
@@ -261,6 +261,10 @@ body {
   transition: all 0.6s ease-in; }
   .dark a {
     color: whitesmoke; }
+  @media (max-width: 576px) {
+    .dark header {
+      background-color: #444346;
+      box-shadow: -6px 0px 13px rgba(250, 250, 250, 0.43); } }
   .dark header .toggle {
     border: 1px solid #131313;
     box-shadow: 1px 1px 4px rgba(250, 250, 250, 0.85); }
@@ -269,14 +273,8 @@ body {
       width: 75px;
       transition: width 0.4s cubic-bezier(0.07, 0.14, 0.73, 0.97);
       box-shadow: 2px 2px 3px rgba(94, 94, 94, 0.871); }
-  .dark header .b-menu .b-bun {
+  .dark header .b-menu-container .b-menu .b-bun {
     background: white; }
-  .dark header .b-menu.open .tab {
-    background: #1f1f1f;
-    box-shadow: -3px 0px 16px rgba(241, 241, 241, 0.2); }
-  .dark header .tab.open {
-    background: #181818;
-    box-shadow: -2px 0px 10px rgba(220, 220, 220, 0.659); }
   .dark #sun {
     transform: rotateX(90deg);
     transition: transform 0.4s cubic-bezier(0.64, 0.32, 0.56, 0.64); }
@@ -293,8 +291,6 @@ header {
   display: flex;
   padding: 8px;
   align-items: center; }
-  header .tab {
-    display: none; }
   header nav {
     font-family: 'Franklin Gothic Medium';
     font-size: 26px;
@@ -332,69 +328,76 @@ header {
       transition: width 0.4s cubic-bezier(0.07, 0.14, 0.73, 0.97); }
   @media (max-width: 576px) {
     header {
+      background: #FFCC3E;
+      z-index: 6;
+      margin-top: 0px;
+      height: 45px;
+      width: 100%;
+      box-shadow: -6px 0px 13px rgba(0, 0, 0, 0.18);
+      position: fixed;
       justify-content: space-between; }
+      header .toggle {
+        align-self: start;
+        margin-top: 10px; }
       header nav {
-        display: none; }
-      header .b-menu {
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%; }
-        header .b-menu nav {
+        display: none;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
+        padding-top: 40px; }
+        header nav li {
+          margin-bottom: 20px; }
+        header nav .barra {
           display: none; }
-        header .b-menu .b-bun {
-          position: relative;
-          background: black;
-          transition: all .4s ease; }
-          header .b-menu .b-bun--top {
-            top: 20px;
-            left: 10px;
-            width: 40px;
-            height: 3px; }
-          header .b-menu .b-bun--mid {
-            top: 26px;
-            left: 10px;
-            width: 40px;
-            height: 3px; }
-          header .b-menu .b-bun--bottom {
-            top: 32px;
-            left: 10px;
-            width: 40px;
-            height: 3px; }
-      header .b-menu {
-        position: relative; }
-        header .b-menu.open {
-          z-index: 2; }
-          header .b-menu.open .b-bun--top {
-            z-index: 1;
-            top: 28px;
-            transform: rotate(45deg); }
-          header .b-menu.open .b-bun--mid {
-            opacity: 0; }
-          header .b-menu.open .b-bun--bottom {
-            z-index: 1;
-            top: 22px;
-            left: 9px;
-            transform: rotate(-45deg); }
-      header .tab {
-        display: none; }
-      header .tab.open {
-        z-index: 1;
-        position: absolute;
+      header .b-menu-container {
         display: flex;
-        align-self: flex-start;
-        right: 0px;
-        top: -10px;
-        height: 100vh;
-        width: 35vh;
-        background: #FFCC3E;
-        box-shadow: -6px 0px 13px rgba(35, 35, 35, 0.19); }
-        header .tab.open nav {
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1; }
-          header .tab.open nav li {
-            padding: 10px; } }
+        align-self: start;
+        margin-right: 20px;
+        margin-top: -5px; }
+        header .b-menu-container .b-menu {
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%; }
+          header .b-menu-container .b-menu .b-bun {
+            position: relative;
+            background: black;
+            transition: all .4s ease; }
+            header .b-menu-container .b-menu .b-bun--top {
+              top: 20px;
+              left: 10px;
+              width: 40px;
+              height: 3px; }
+            header .b-menu-container .b-menu .b-bun--mid {
+              top: 26px;
+              left: 10px;
+              width: 40px;
+              height: 3px; }
+            header .b-menu-container .b-menu .b-bun--bottom {
+              top: 32px;
+              left: 10px;
+              width: 40px;
+              height: 3px; }
+        header .b-menu-container .b-menu {
+          position: relative; }
+          header .b-menu-container .b-menu.open {
+            z-index: 2; }
+            header .b-menu-container .b-menu.open .b-bun--top {
+              z-index: 1;
+              top: 28px;
+              transform: rotate(45deg); }
+            header .b-menu-container .b-menu.open .b-bun--mid {
+              opacity: 0; }
+            header .b-menu-container .b-menu.open .b-bun--bottom {
+              z-index: 1;
+              top: 22px;
+              left: 9px;
+              transform: rotate(-45deg); }
+      header.show-menu {
+        height: 35vh; }
+        header.show-menu nav {
+          display: flex; } }
 
 #sun {
   width: 23px;

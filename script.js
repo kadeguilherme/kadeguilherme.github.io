@@ -2,14 +2,14 @@ body = document.body
 burguerMenu = document.querySelector('.b-menu');
 main= document.querySelector('main');
 nav = document.querySelector('nav');
-tab = document.querySelector('.tab');
+header = document.querySelector('header');
 
 burguerMenu.addEventListener(
     'click',
     function(){
     burguerMenu.classList.toggle('open');
     nav.classList.toggle('open');
-    tab.classList.toggle('open');
+    header.classList.toggle('show-menu')
         }
     );
 
@@ -19,7 +19,8 @@ burguerMenu.addEventListener(
         if(nav.classList.contains('open')){   
             burguerMenu.classList.remove('open');
             nav.classList.remove('open');
-            tab.classList.remove('open');
+            header.classList.remove('show-menu');
+      
          
         }
             
