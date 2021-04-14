@@ -173,16 +173,6 @@ function mouseleaveFunc(){
 }
 
 
-//ANIMATION SCRIPT
-var manutencao = document.querySelector("#manutencao");
-
-bodymovin.loadAnimation({
-    container: manutencao,
-    renderer:'svg',
-    loop: true,
-    autoplay: true,
-    path: 'img/manutencao.json'
-})
 
 
 //ANIMATION SCRIPT

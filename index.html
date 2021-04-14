@@ -1,138 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css"> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js" integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1jvYdJQRD8jOoIVl+WTyVeMawUWVCh1O8+Q==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"
+        integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1jvYdJQRD8jOoIVl+WTyVeMawUWVCh1O8+Q=="
+        crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 
 <body>
 
-    <header class=""><!--Navegação Inicio-->
+    <header class="">
+        <!--Navegação Inicio-->
         <div class="toggle">
-            <img id="moon" src="img/moon.svg" alt="escuro" data-switch-dark-imagem >
+            <img id="moon" src="img/moon.svg" alt="escuro" data-switch-dark-imagem>
             <div id="circle" data-switch-dark>
                 <img id="sun" src="img/sun.svg" alt="claro">
             </div>
         </div>
 
         <nav>
-            <li><a class="nav-link"  href="#">Home</a>
-            <li><a class="nav-link"  href="#">Sobre</a>
-            <li><a class="nav-link"  href="#">Projetos</a>
-            <span class="barra"></span>
+            <li><a class="nav-link" href="#">Home</a>
+            <li><a class="nav-link" href="#">Sobre</a>
+            <li><a class="nav-link" href="#">Projetos</a>
+                <span class="barra"></span>
         </nav>
         <div class="b-menu-container">
-        <div class="b-menu">
-            <div class="b-bun b-bun--top"></div>
-            <div class="b-bun b-bun--mid"></div>
-            <div class="b-bun b-bun--bottom"></div>
+            <div class="b-menu">
+                <div class="b-bun b-bun--top"></div>
+                <div class="b-bun b-bun--mid"></div>
+                <div class="b-bun b-bun--bottom"></div>
+            </div>
         </div>
-    </div>
-    </header><!--Navegação Fim-->
+    </header>
+    <!--Navegação Fim-->
 
-    <main><!--Conteudo Principal-->
+    <main>
+        <!--Conteudo Principal-->
 
-        <div class="conteudo"><!--Conteudo-->
+        <div class="conteudo">
+            <!--Conteudo-->
 
-            <div id="info"><!--INFO-->
+            <div id="info">
+                <!--INFO-->
                 <p>Olá,eu sou o</p>
-                <h1>Guilherme<p>.</p></h1>
+                <h1>Guilherme<p>.</p>
+                </h1>
                 <p>Desenvolvedor Front-end <img src="img/icons8-computador-64.png" alt=""><br>
-                e Mobile<img  id="android" src="img/icons8-android-os-48.png" alt=""> </p> 
-                
-                
-                
+                    e Mobile<img id="android" src="img/icons8-android-os-48.png" alt=""> </p>
+
+
+
                 <div id="git">
                     <a href="https://github.com/kadeguilherme" target="_blank">
-                        <button  name="github">
+                        <button name="github">
                             GIT HUB <img src="img/Icon ionic-logo-github.svg" alt="github">
                         </button>
                     </a>
                 </div>
-            </div><!--FIM INFO-->
+            </div>
+            <!--FIM INFO-->
 
             <div id="imagem"></div>
-        </div><!--FIM Conteudo-->
-    
-        <div id="sobre"><!--Sobre-->
+        </div>
+        <!--FIM Conteudo-->
+
+        <div id="sobre">
+            <!--Sobre-->
             <h1>
                 Sobre mim
             </h1>
-            <p>
-            Atualmente estou estudando Ciência da Computação no Instituto Federal de Brasilia(IFB) já participei de Maratona de programação. 
-            e estou em busca de novos desafios, sejam eles profissionais ou acadêmicos, pois acredito que na área de 
-            tecnológia é importante se atualizar constantemente. 
-            Sou apaixonada por desenvolvimento web e mobile.
-            </p>
+
+            <div id="sobre-perfil">
+
+
+                <p>
+                    Atualmente estou estudando Ciência da Computação no Instituto Federal de Brasilia(IFB) já participei
+                    de
+                    Maratona de programação.
+                    e estou em busca de novos desafios, sejam eles profissionais ou acadêmicos, pois acredito que na
+                    área de
+                    tecnológia é importante se atualizar constantemente.
+                    Sou apaixonada por desenvolvimento web e mobile.
+                    <br>
+                    No momento, estou procurando um estágio a fim de obter experiência e desenvolver meus conhecimentos
+                    na área.
+                </p>
+
+                <img src="img/semborda.png" alt="FOTO-PERFIL" srcset="">
+
+            </div>
 
             <div class="botoes">
 
                 <div id="linkedin">
                     <a href="https://www.linkedin.com/in/guilherme-aguiarr/" target="_blank">
-                        <button  name="linkedin">
-                            Linkedin 
-                            <!-- <img src="" alt="linkedin"> -->
+                        <button name="linkedin">
+                            <img src="img/Linkedin icon-white.svg" alt="" srcset="">
                         </button>
+                        Linkedin
                     </a>
                 </div>
-            
+
                 <div id="cv">
-                    <a href="https://drive.google.com/file/d/1n_u9sYcVHl8yk9e6ehQ53QHF97Hlk3n3/view" target="_blank">
-                        <button  name="linkedin">
-                            Curriculo 
-                            <!-- <img src="" alt="linkedin"> -->
+                    <a href="https://drive.google.com/file/d/1sfWZstA8gOQmklNdVPK3SK8dhW9D29kq/view?usp=sharing" target="_blank">
+                        <button name="curriculo">
+                            <img src="img/curriculo.svg" alt="CURRICULO" srcset="">
                         </button>
+                        Curriculo
                     </a>
                 </div>
             </div>
-        </div><!--FIM Sobre-->
+        </div>
+        <!--FIM Sobre-->
 
 
-        <div id="projetos"><!--Projetos-->
+        <div id="projetos">
+            <!--Projetos-->
 
             <h1>Projetos</h1>
-            
+
             <div class="projetos-container">
-                <div id="manutencao"></div>
-                <h3>Em manutenção</h3>
             </div>
-            
-
-        </div><!--FIM Projetos-->
-        
-        <h1>Conhecimentos</h1>
-        <div id="conhecimentos"><!--Conhecimentos-->
-
-            <img  src="img/html.png" alt="" class="imagens">
-            <img src="img/css.png" alt="" class="imagens" >
-            <img src="img/figma.png" alt="" style="width: 3rem; height: 4rem; padding: 20px;">
-            <img src="img/javascript.png" alt="" class="imagens">
-            <img src="img/sass.png" alt="" class="imagens">
-            <img src="img/java.png" alt="" class="imagens">
-            <img src="img/adobexd.png" alt="" class="imagens">
-            <img src="https://img.icons8.com/color/48/000000/dart.png" class="imagens">
-            <img src="img/bootstrap.png" alt="" class="imagens">
-            <!-- <img src="img/react.png" alt="" class="imagens"> -->
-            <img src="img/vscode.png" alt="" class="imagens">
-            <img src="img/github.png" alt="" class="imagens">
-            <img src="img/mysql.png" alt="" class="imagens">
-            <img src="https://img.icons8.com/fluent/48/000000/adobe-photoshop.png" class="imagens">
-            <!-- <img src="img/nodejs.png" alt="" class="imagens"> -->
-            <img src="https://img.icons8.com/color/50/000000/adobe-after-effects.png" class="imagens">
-
-        </div><!--FIM Conhecimentos-->
-    
-    </main><!--FIM Conteudo Principal-->
 
 
-    <footer><!--Conteudo Footer-->
-        <p>Feito com 💜 por Guilherme</p>
-    </footer><!--FIM Conteudo Footer-->
 
-<script src="script.js"></script>
+        </div>
+        <!--FIM Projetos-->
+
+        <h1>Skills</h1>
+        <div id="Skills">
+            <!--Conhecimentos-->
+
+        </div>
+        <!--FIM Conhecimentos-->
+
+    </main>
+    <!--FIM Conteudo Principal-->
+
+
+    <footer>
+        <!--Conteudo Footer-->
+        <p>Portfólio</p>
+
+        <div>
+            <a href="https://github.com/kadeguilherme" target="_blank">
+                Sobre mim
+            </a>
+
+            <a href="https://drive.google.com/file/d/1sfWZstA8gOQmklNdVPK3SK8dhW9D29kq/view?usp=sharing" target="_blank">
+                Dowloand CV
+            </a>
+        </div>
+
+
+        <div>
+            <img src="img/Linkedin icon-white.svg" alt="Linkedin" srcset="">
+            <img src="img/Twitter icon.svg" alt="Twitter" srcset="">
+            <img src="img/Facebook icon.svg" alt="Facebook" srcset="">
+
+        </div>
+
+    </footer>
+    <!--FIM Conteudo Footer-->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
