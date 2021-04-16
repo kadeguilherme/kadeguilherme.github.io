@@ -37,7 +37,7 @@
                     color: white;
                 }
                 button {
-                    background-color: black;
+                    background-color: rgb(248, 247, 247);
                 }
             }
 
@@ -46,7 +46,7 @@
                     color: white;
                 }
                 button {
-                    background-color: black;
+                    background-color: rgb(248, 247, 247);
                 }
             }
         }
@@ -55,6 +55,19 @@
     #projetos {
         .projetos-container {
             background-color: #ff974d;
+        }
+    }
+    #projeto-centro {
+        background-color: #ff974d;
+    }
+
+    .dots{
+        .dot-active {
+
+            background-color: #FF6A00;
+        }
+        .dot{
+            background-color: #FF6A00;
         }
     }
 
@@ -297,6 +310,7 @@ main {
         }
 
         @media (max-width: 576px) {
+            width: 100vh; //obersavacão
             display: flex;
             flex-direction: column;
             background: #f5c542;
@@ -335,8 +349,7 @@ main {
 
         @media (max-width: 576px) {
             .projetos-container {
-                width: 250px;
-                height: 250px;
+                display: none;
             }
         }
     }
@@ -353,7 +366,10 @@ main {
         background-color: white;
 
         margin: auto;
-       
+        @media (max-width: 576px) {
+        display: none;
+        }
+
         
     }
 
