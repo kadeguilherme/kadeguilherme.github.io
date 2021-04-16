@@ -9,6 +9,10 @@
     h1 {
         color: var(--color-txt);
     }
+
+    h2 {
+        color: var(--color-txt);
+    }
     .conteudo {
         #info {
             p {
@@ -28,16 +32,19 @@
         }
 
         .botoes {
-         
             #linkedin {
-                a{color: white;}
+                a {
+                    color: white;
+                }
                 button {
                     background-color: black;
                 }
             }
 
             #cv {
-                a{color: white;}
+                a {
+                    color: white;
+                }
                 button {
                     background-color: black;
                 }
@@ -46,11 +53,8 @@
     }
 
     #projetos {
-     
         .projetos-container {
-         
-            background-color: #FF974D;
-         
+            background-color: #ff974d;
         }
     }
 
@@ -58,19 +62,26 @@
         font-weight: bold;
         font-family: "Trebuchet MS";
         background: #212121;
-      
     }
 }
 
 main {
     display: relative;
-
+    .b-menu-container {
+        padding-right: 2rem;
+    }
     h1 {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 45px;
         font-family: "SF Pro Display";
     }
+
+    h2 {
+        font-family: "SF Pro Display";
+        font-weight: 500;
+    }
+
     p {
         font-family: "SF Pro Display";
     }
@@ -80,6 +91,7 @@ main {
 
     @media (max-width: 576px) {
         padding-top: 50px;
+
         h1 {
             margin-left: 5%;
             font-size: 32px;
@@ -149,7 +161,7 @@ main {
                 }
             }
         }
-//arrumar a imagem com grid
+        //arrumar a imagem com grid
         #imagem {
             padding-right: 20px;
             margin-top: -80px;
@@ -161,19 +173,18 @@ main {
             }
         }
 
-        @media (max-width:927px) {
+        @media (max-width: 927px) {
             padding-top: 100px;
-            #imagem{
+            #imagem {
                 display: none;
             }
         }
         @media (max-width: 576px) {
-            
             margin-left: 0px;
             #info {
                 margin-bottom: 20px;
                 margin-top: 40px;
-                
+
                 p {
                     font-size: 20px;
                     img {
@@ -288,21 +299,19 @@ main {
         @media (max-width: 576px) {
             display: flex;
             flex-direction: column;
-            background: #F5C542;
+            background: #f5c542;
             p {
                 margin-left: 5%;
                 margin-right: 4%;
             }
 
             #sobre-perfil {
-                
                 display: block;
-                
+
                 img {
                     margin: 2rem;
                     width: 76px;
                     height: 76px;
-                   
                 }
             }
             .botoes {
@@ -312,16 +321,16 @@ main {
     }
 
     #projetos {
-        margin-top: 10px;
-        margin-bottom: 40px;
+        padding-right: 0px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        // class="projetos-container"
+
         .projetos-container {
-            display: grid;
-            grid-gap: 10px;
-            margin: auto;
             background-color: white;
-            width: 300px;
-            height: 300px;
-            justify-content: center;
+            width: 350px;
+            height: 350px;
         }
 
         @media (max-width: 576px) {
@@ -332,30 +341,94 @@ main {
         }
     }
 
-    #conhecimentos {
+    #projeto-centro {
+        display: flex;
+        padding: auto;
+        flex-direction: column;
+        
+
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        background-color: white;
+
+        margin: auto;
+       
+        
+    }
+
+    .dots {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        width: 50%;
-        margin: auto;
-
         justify-content: center;
-        .imagens {
-            width: 4rem;
-            height: 4rem;
-            padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .dot-active {
+            margin: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .dot {
+            margin: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 60%;
+        }
+    }
+    #skills {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin: auto;
+        justify-items: flex-start;
+        padding-left: 9rem;
+       
+        .conhecimento {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 0px 20px 0px;
+            margin: auto;
+            align-items: center;
         }
 
-        @media (max-width: 576px) {
-            width: 100%;
-            flex-wrap: wrap;
-            align-self: center;
-            .projetos-container {
-                margin-top: 20px;
-                margin-left: 10px;
-                width: 200px;
-                height: 200px;
+        .front {
+            #circulo {
+                margin-left: 65px;
             }
+        }
+
+        .back {
+            #circulo {
+                margin-left: 103px;
+            }
+        }
+
+        .outros {
+            #circulo {
+                margin-left: 128px;
+            }
+        }
+        #circulo {
+            width: 40px;
+            height: 40px;
+            margin-left: 40px;
+            background: white;
+            border-radius: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        flex-wrap: wrap;
+        align-self: center;
+        .projetos-container {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
         }
     }
 }
@@ -365,7 +438,7 @@ footer {
     height: 60px;
     background: #ffb23e;
     display: flex;
-    
+
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
@@ -380,39 +453,35 @@ footer {
     }
 
     a {
-        
         text-decoration: none;
         color: white;
         margin-right: 20px;
     }
-    
+
     @media (max-width: 576px) {
         margin: auto;
         font-size: 20px;
         display: flex;
         flex-direction: column;
-       
+
         height: auto;
-        p{
+        p {
             padding-top: 10px;
             margin-left: 10px;
             font-size: 19px;
         }
-        a{
+        a {
             margin-right: 4px;
             font-size: 13px;
         }
 
-        img{
+        img {
             width: 0.9rem;
             height: 0.9rem;
-            padding-right:4px;
-          
-       
-           justify-content: center;
-           align-content: center;
-           
+            padding-right: 4px;
+
+            justify-content: center;
+            align-content: center;
         }
     }
-
 }
