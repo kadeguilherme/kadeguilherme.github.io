@@ -103,11 +103,21 @@ main {
     }
 
     @media (max-width: 576px) {
-        padding-top: 50px;
+       
+        width: 100%;
+        flex-wrap: wrap;
+        align-self: center;
 
         h1 {
             margin-left: 5%;
             font-size: 32px;
+        }
+        
+        .projetos-container {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
         }
     }
 
@@ -150,7 +160,9 @@ main {
                 justify-content: left;
                 margin-top: 22px;
                 padding-left: 6px;
-
+//ARRUMAR O BUTTON PARA FAZER O EFEITO
+//BASE O CODIGO HOVER BUTTON
+//ESTUDAR A PARTE COMPILAR DE SASS PARA CSS PARA CONSERTA O ERRO
                 button {
                     cursor: pointer;
                     font-family: "SF Pro Display";
@@ -163,9 +175,18 @@ main {
                     color: white;
                     width: 160px;
                     height: 45px;
-                    border-radius: 30px;
-                    background-color: var(--color-btn-git);
-                    border-width: 1px;
+                    border-radius: 3px;
+                   
+                    ::before{
+                        content: '';
+                        background: black;
+                    }
+                    
+                }
+
+                .button--dione::before{
+                    content: '';
+                    
                 }
 
                 img {
@@ -231,6 +252,8 @@ main {
             display: flex;
             margin-right: 5%;
             font-size: 20px;
+            font-family: "SF Pro Display";
+            font-weight: normal;
         }
 
         #sobre-perfil {
@@ -270,12 +293,14 @@ main {
                     background-color: var(--color-btn-link);
                     width: 60px;
                     height: 60px;
-                    border-radius: 30%;
+                    border-radius: 35%;
                     border-color: none;
                 }
 
                 a {
                     color: #0a78e5;
+                    font-size: 33px;
+                    font-weight: bold;
                 }
 
                 img {
@@ -294,7 +319,7 @@ main {
                     color: white;
                     width: 66px;
                     height: 66px;
-                    border-radius: 30%;
+                    border-radius: 35%;
                     border-color: none;
                 }
                 img {
@@ -305,6 +330,7 @@ main {
                 }
                 a {
                     color: #b36710;
+                    font-size: 33px;
                 }
             }
         }
@@ -436,17 +462,6 @@ main {
         }
     }
 
-    @media (max-width: 576px) {
-        width: 100%;
-        flex-wrap: wrap;
-        align-self: center;
-        .projetos-container {
-            margin-top: 20px;
-            margin-left: 10px;
-            width: 200px;
-            height: 200px;
-        }
-    }
 }
 
 footer {

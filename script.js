@@ -20,8 +20,6 @@ burguerMenu.addEventListener(
             burguerMenu.classList.remove('open');
             nav.classList.remove('open');
             header.classList.remove('show-menu');
-      
-         
         }
             
     }
