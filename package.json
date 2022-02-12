@@ -8,8 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "sass": "^1.29.0"
+    "bootstrap": "^4.6.1",
+    "sass": "^1.49.7"
   },
   "description": ""
 }
