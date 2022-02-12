@@ -4,39 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="sass/estilo.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"
-        integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1jvYdJQRD8jOoIVl+WTyVeMawUWVCh1O8+Q=="
-        crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 
 <body>
 
     <header>
-        <!--Navegação Inicio-->
-        <div class="toggle">
-            <img id="moon" src="img/moon.svg" alt="escuro" data-switch-dark-imagem>
-            <div id="circle" data-switch-dark>
-                <img id="sun" src="img/sun.svg" alt="claro">
-            </div>
-        </div>
-
+        <!--HOME-->
         <nav>
             <li><a class="nav-link" href="#">Home</a>
-            <li><a class="nav-link" href="#">Sobre</a>
-            <li><a class="nav-link" href="#">Projetos</a>
-                <span class="barra"></span>
+            <li><a class="nav-link" href="#">Jobs</a>
+            <li><a class="nav-link" href="#">Contact</a>
         </nav>
-
-        <div class="b-menu-container">
-            <div class="b-menu">
-                <div class="b-bun b-bun--top"></div>
-                <div class="b-bun b-bun--mid"></div>
-                <div class="b-bun b-bun--bottom"></div>
-            </div>
-        </div>
     </header>
     <!--Navegação Fim-->
 
@@ -45,178 +25,76 @@
 
         <div class="conteudo">
             <!--Conteudo-->
-
+            <div id="avatar">
+                <img src="img/AVATAR.svg" alt="">
+            </div>
             <div id="info">
                 <!--INFO-->
-                <p>Olá,eu sou o</p>
-                <h1>Guilherme<p>.</p>
+                <h1>
+                    Hi, I am Guilherme,<br>
+                    Architeture of AWS | Architeture of Networking 
                 </h1>
-                <p>Desenvolvedor Front-end <img src="img/icons8-computador-64.png" alt=""><br>
-                    e Mobile<img id="android" src="img/icons8-android-os-48.png" alt=""> </p>
 
+                <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud 
+                    amet.
+                </p>
 
-
-                <div id="git">
+                <div>
                     <a href="https://github.com/kadeguilherme" target="_blank">
-                        <button class="button button--dione" name="github">
-                            GIT HUB <img src="img/Icon ionic-logo-github.svg" alt="github">
+                        <button class="button button--dione" name="dowloand">
+                            DOWLOAND CV
                         </button>
                     </a>
                 </div>
             </div>
             <!--FIM INFO-->
+           
 
-            <div id="imagem"></div>
         </div>
         <!--FIM Conteudo-->
-
-        <div id="sobre">
-            <!--Sobre-->
-            <h1>
-                Sobre mim
-            </h1>
-
-            <div id="sobre-perfil">
-
-
-                <p>
-                    Atualmente estou estudando Ciência da Computação no Instituto Federal de Brasilia(IFB) já participei
-                    de
-                    Maratona de programação.
-                    e estou em busca de novos desafios, sejam eles profissionais ou acadêmicos, pois acredito que na
-                    área de
-                    tecnológia é importante se atualizar constantemente.
-                    Sou apaixonada por desenvolvimento web e mobile.
-                    <br>
-                    No momento, estou procurando um estágio a fim de obter experiência e desenvolver meus conhecimentos
-                    na área.
-                </p>
-
-                <img src="img/semborda.png" alt="FOTO-PERFIL" srcset="">
-
-            </div>
-
-            <div class="botoes">
-
-                <div id="linkedin">
-                    <a href="https://www.linkedin.com/in/guilherme-aguiarr/" target="_blank">
-                        <button name="linkedin">
-                            <img src="img/Linkedin icon-white.svg" alt="" srcset="">
-                        </button>
-                        Linkedin
-                    </a>
-                </div>
-
-                <div id="cv">
-                    <a href="https://drive.google.com/file/d/1sfWZstA8gOQmklNdVPK3SK8dhW9D29kq/view?usp=sharing"
-                        target="_blank">
-                        <button name="curriculo">
-                            <img src="img/curriculo.svg" alt="CURRICULO" srcset="">
-                        </button>
-                        Curriculo
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--FIM Sobre-->
-
-
-        <h1>Projetos</h1>
-        <div id="projetos">
-            <!--Projetos-->
-
-
-            <div class="projetos-container"></div>
-            <div class="projetos-container"></div>
-
-        </div>
-
-        <div id="projeto-centro"></div>
-
-        <div class="dots">
-            <div class="dot-active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        <!--FIM Projetos-->
-
-        <h1>Skills</h1>
-        <div id="skills">
-            <!--Conhecimentos-->
-            <div>
-                <div class="conhecimento" id="adobe">
-                    <h2>Adobe Creative</h2>
-                    <div id="circulo"></div>
-                </div>
-
-                <p>Photoshop, Illustrator, XD, After Effects, Premiere</p>
-            </div>
-
-            <div class="front">
-                <div class="conhecimento" id="front">
-                    <h2>Front End</h2>
-                    <div id="circulo"></div>
-                </div>
-                <p>HTML, CSS, Sass,Tailwind Css, Bootrasp, Web-Pack, React, Flutter </p>
-            </div>
-
-            <div class="back">
-                <div class="conhecimento">
-                    <h2>Back End</h2>
-                    <div id="circulo"></div>
-                </div>
-                <p>NodeJs</p>
-            </div>
-
-            <div>
-                <div class="conhecimento" id="linguagens">
-                    <h2>Linguagens</h2>
-                    <div id="circulo"></div>
-                </div>
-                <p>C ,Java, JavaScript, Dart</p>
-            </div>
-
-            <div class="outros">
-                <div class="conhecimento">
-                    <h2>Outros</h2>
-                    <div id="circulo"></div>
-                </div>
-                <p>MySQL, MongoDB, Figma</p>
-            </div>
-
-
-        </div>
-        <!--FIM Conhecimentos-->
 
     </main>
     <!--FIM Conteudo Principal-->
 
 
-    <footer>
-        <!--Conteudo Footer-->
-        <p>Portfólio</p>
+    <div class="jobs">
+        
+            <h1>JOBS</h1>
 
-        <div>
-            <a href="https://github.com/kadeguilherme" target="_blank">
-                Sobre mim
-            </a>
+        <div class="cards-job">
 
-            <a href="https://drive.google.com/file/d/1sfWZstA8gOQmklNdVPK3SK8dhW9D29kq/view?usp=sharing"
-                target="_blank">
-                Dowloand CV
-            </a>
+            <div class="card-jobs">
+                <div class="text-h3-job">
+                    <h3 >TRF-1</h3>
+                    <p>imagem</p>
+                </div>
+                <div class="text-p-job">
+                <p>12 Dec 2021   </p> <p> Infrastrutura</p>
+                </div>
+                <p class="text-jobs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Facere enim sint repellat dolor, modi ex error iure ea voluptatum, voluptas 
+                    consequuntur molestias magnam optio mollitia reprehenderit blanditiis culpa. Cum, nisi?</p> 
+            </div>
+
+            <div class="card-jobs">
+                <div class="text-h3-job">
+                    <h3 >TRF-1</h3>
+                    <p>imagem</p>
+                </div>
+                <div class="text-p-job">
+                <p>12 Dec 2021   </p>   <p>Redes | Suporte</p>
+                </div>
+                <p class="text-jobs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Facere enim sint repellat dolor, modi ex error iure ea voluptatum, voluptas 
+                    consequuntur molestias magnam optio mollitia reprehenderit blanditiis culpa. Cum, nisi?</p> 
+            </div>
+
         </div>
 
-
-        <div>
-            <img src="img/Linkedin icon-white.svg" alt="Linkedin" srcset="">
-            <img src="img/Twitter icon.svg" alt="Twitter" srcset="">
-            <img src="img/Facebook icon.svg" alt="Facebook" srcset="">
-
-        </div>
-
-    </footer>
-    <!--FIM Conteudo Footer-->
+    </div>
+  
 
     <script src="script.js"></script>
 
