@@ -1,274 +1,30 @@
-body{
-    transition: all 0.6s ease-in-out;
-    background:var(--color-clear) ;
- 
-}
-
-.dark{
-        background-color: var(--color-dark);
-        transition: all 0.6s ease-in-out;
-        a{
-            color: whitesmoke;
-        }
-
-        header{
-            @media(max-width: 576px) {
-          
-            background-color:#444346;
-            box-shadow:0px 2px 7px rgba(250 ,250, 250 , 0.89);
-           
-            }
-            .toggle{
-                border: 1px solid #131313;
-                box-shadow: 1px 1px 4px rgba(250, 250, 250, 0.85);
-                #circle{
-                background-color: rgba(21, 21, 21, 0.631);
-                width: 75px;
-                transition:  width 0.5s ease-in-out;
-                box-shadow: 2px 2px 3px rgba(94, 94, 94, 0.871);
-                }
-            }
-
-            
-            .b-menu-container{
-                
-                .b-menu{
-                    .b-bun{
-                        background: white;
-                    }
-                  
-                }
-                 
-               
-            }
-        
-        }
-
-
-        #sun{
-            transform:rotateX(90deg);
-            transition: transform 0.5s ease-in-out;;
-      
-            
-        }
-        #moon{
-            transform:rotateX(0deg);
-            z-index: 1;
-            transition: transform 0.4s cubic-bezier(.64,.32,.56,.64);
-        }
-        .barra{
-            border-bottom: transparent;
-          
-        }
-    }
-
-  @keyframes slideIn{
-
-   0%{
-    opacity: 0%;
-
-   } 
-    100%{
-        opacity: 100%;
-    }
-
-
-  }
 
 header{
-
-    position: relative;
-    margin-top: 5px;  
-    display: flex;
+    margin-top: 27px;  
     padding: 8px;
-    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
 
     nav{
-        
-        font-family:'SF Pro Display';
-        font-weight: bolder;
-        font-size: 26px;
         display: flex;
-        justify-content: center;
-        
-        a{
+        font-size: 22px;
+        a{ 
+            font-family: heebo-medium;
             color: black;
             text-decoration: none ;
             margin-left: 40px;
             margin-bottom: 10px;
         }
-        .barra{
-            position: absolute;
-            border-bottom: 4px solid transparent;
-            transform: rotateX(-10px);
-            transition: all 0.8s ease-in-out;
-            z-index: -1;
-        }   
-        
-        
        
     }
    
-    //Botão
-    .toggle{
-        z-index: 2;
-        display: flex;
-        border-radius: 60px;
-        height: 24px;
-        width: 75px;
-        border: 1px solid #f8c418;
-        overflow: hidden;
-        box-shadow: 2px 2px 4px rgba(33, 33, 33, 0.323);
 
-        #circle{
-            background-color: #FFFFA1;
-            height: 26px;
-            width: 26px;
-            margin-top: -1px;
-            border-radius: 40px;
-            cursor: pointer;
-          border: none;
-            box-shadow:2px 1px 7px rgb(251, 255, 4);
-            transition:  width 0.4s cubic-bezier(.07,.14,.73,.97);  
-        }
-    }
-    // position: fixed;
  
-    @media(max-width: 576px) {
-        background: #FFCC3E;
-        // z-index: 6;
-        margin-top: 0px;
-        height: 45px;
-         position: absolute;
-       
-        transition: all 0.6s ease-out;
-       
-        
-        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.18);
-        // position: fixed;
-        justify-content: space-between;
-      
-        .toggle{
-            align-self: start;
-            margin-top: 10px;
-        }
-        
+    @media (min-width:200px) and (max-width: 997px){
         nav{
-            
             display: none;
-            flex-direction: column;
-            align-self: center;
-            justify-content: center;
-            margin: auto;
-            
-            li{
-                margin-bottom: 20px;
-            }
-          
-        .barra{
-            display: none;
-            }
-        }
-     
-        .b-menu-container{
-            display: flex;
-            align-self: start;
-            margin-right: 20px;
-            margin-top: -5px;
-        .b-menu{
-           
-         
-            cursor: pointer;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;  
-            .b-bun{
-                position: relative; 
-                background: black; 
-                transition: all .4s ease;
-                &--top{
-                top: 20px;
-                left: 10px;
-                width:40px;
-                height: 3px;
-                    }
-    
-                &--mid{
-                top: 26px;
-                left: 10px;
-                width:40px;
-                height: 3px;
-                    }
-    
-                &--bottom{
-                top: 32px;
-                left: 10px;
-                width:40px;
-                height: 3px;
-                    }       
-             }
-
-           
-        }
-  
-        .b-menu{ 
-            position: relative;
-            &.open{
-                z-index: 2;
-                .b-bun--top{
-                    z-index: 1;
-                    top: 28px;
-                    transform: rotate(45deg);
-                }
-                .b-bun--mid{
-                    opacity: 0;
-                }
-                .b-bun--bottom{
-                    z-index: 1;
-                    top: 22px;
-                    left: 9px;
-                    transform: rotate(-45deg);
-                }
-
-                
-            }
-        }
-       
-    }
-
-    &.show-menu{
-        height: 37vh;
-        nav{
-            display: flex;
-            animation: slideIn 1.2s;            
         }
     }
     
-    }
-    
 }
-
-
-
-#sun{
-    width: 23px;
-    height: 23px;
-    position: absolute;
-    margin-left: 1px;
-    margin-top: 1px;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;;
-}
-
-#moon{
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    padding: 1px;
-    margin-left: 50px;
-    cursor: pointer;
-    transform:rotateX(90deg);
-    z-index: -1;
-    transition: transform 0.5s ease-in-out;;
-}
-

@@ -1,14 +1,32 @@
 *{
   
-    padding: 0;
+    padding: 0px;
     margin: 0px;
+    font-family: heebo;
 }
 
 body{
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    width: 100%;
-    height: 100%;
+    background: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../../font/heebo.regular.ttf);
+  
+}
+
+@font-face{
+    font-family: heebo-bold;
+    src: url(../../font/heebo.bold.ttf);
+}
+
+@font-face{
+    font-family: heebo-medium;
+    src: url(../../font/heebo.medium.ttf);
 }
 
