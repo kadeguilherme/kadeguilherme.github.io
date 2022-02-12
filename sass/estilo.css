@@ -177,7 +177,7 @@ header nav a {
   margin-top: 40px;
 }
 
-.jobs .card-jobs {
+.jobs .cards-job .card-jobs {
   background: #fdfdfd;
   padding: 20px;
   min-height: 300px;
@@ -185,12 +185,16 @@ header nav a {
   margin-bottom: 40px;
 }
 
-.jobs .card-jobs p {
+.jobs .cards-job .card-jobs p {
   font-size: 19px;
   color: #21243D;
 }
 
-.jobs .card-jobs .text-jobs {
+.jobs .cards-job .card-jobs .text-h3-job img {
+  display: none;
+}
+
+.jobs .cards-job .card-jobs .text-jobs {
   font-size: 17px;
   text-align: center;
   padding-top: 20px;
@@ -218,6 +222,20 @@ header nav a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jobs .cards-job .card-jobs .text-h3-job img {
+    height: 65px;
+    width: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .jobs .cards-job .card-jobs .text-h3-job #objetivo {
+    height: 65px;
+    width: 20vh;
   }
   .jobs .cards-job .card-jobs .text-p-job {
     display: -webkit-box;
