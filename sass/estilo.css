@@ -9,7 +9,7 @@ body {
           box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  background: #e6e6e6;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,6 +259,46 @@ header nav a {
   .jobs .cards-job .card-jobs .text-p-job p {
     padding-right: 50px;
   }
+}
+
+.certificados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certificados .certificado {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.certificados .certificado .img {
+  width: 200px;
+  height: 150px;
+  background: #f2f2f2;
+}
+
+.certificados .certificado .img img {
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 :root {

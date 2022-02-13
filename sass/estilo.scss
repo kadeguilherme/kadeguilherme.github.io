@@ -7,6 +7,7 @@ $font-tamanho:26px;
 @import "layout/l-main";
 @import "layout/l-nav";
 @import "layout/l-jobs";
+@import "layout/l-certificados";
 
 :root{
     @each $name, $color in $project-color {
