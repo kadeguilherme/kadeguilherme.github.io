@@ -1,26 +1,28 @@
 main {
-
+    padding-left: 40px;
+    padding-right: 40px;
     .conteudo {
         margin-top: 100px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         align-content: center;
+        
         // border:solid 1px blue;     
-      
         @media (min-width:200px) and (max-width: 997px){
             margin-top: 0;
             flex-direction: column;            
         }
 
         p{
-            width: 100vh;
+            max-width: 90vh;
             margin-top: 30px;
             margin-bottom: 38px;
-            font-size: 1.2rem;
-            //border:solid 1px red;
+            font-size: 1.1rem;
+            // border:solid 1px red;
             @media (min-width:200px) and (max-width: 997px){
-                font-size: 4.2vw;
+                font-size: 3.5vw;
+                text-align: center;
                 width: auto;
                 padding-inline: 20px;
                 margin-bottom: 24px;
@@ -39,11 +41,13 @@ main {
                 justify-content: center;
       
             }
+            margin-right: 15px;
 
             h1 {
                 font-size: 3.4vw;
                 font-family: heebo-bold;
-                // border:solid 1px red;
+                
+                //  border:solid 1px red;
                 @media (min-width:200px) and (max-width: 997px){
                     font-size: 25px;
                     text-align: center;

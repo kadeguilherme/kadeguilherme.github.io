@@ -34,6 +34,11 @@ body {
   src: url(../../font/heebo.medium.ttf);
 }
 
+main {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 main .conteudo {
   margin-top: 100px;
   display: -webkit-box;
@@ -60,19 +65,24 @@ main .conteudo {
 }
 
 main .conteudo p {
-  width: 100vh;
+  max-width: 90vh;
   margin-top: 30px;
   margin-bottom: 38px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 200px) and (max-width: 997px) {
   main .conteudo p {
-    font-size: 4.2vw;
+    font-size: 3.5vw;
+    text-align: center;
     width: auto;
     padding-inline: 20px;
     margin-bottom: 24px;
   }
+}
+
+main .conteudo #info {
+  margin-right: 15px;
 }
 
 @media (min-width: 200px) and (max-width: 997px) {
@@ -175,6 +185,7 @@ header nav a {
 
 .jobs h1 {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .jobs .cards-job .card-jobs {
@@ -197,7 +208,7 @@ header nav a {
 .jobs .cards-job .card-jobs .text-jobs {
   font-size: 17px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 45px;
   color: black;
 }
 
