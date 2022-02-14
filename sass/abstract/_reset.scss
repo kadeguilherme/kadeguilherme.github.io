@@ -12,6 +12,9 @@ body{
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    color:var(--color-txt)
+    
+
 }
 
 @font-face {
@@ -30,3 +33,7 @@ body{
     src: url(../../font/heebo.medium.ttf);
 }
 
+@font-face{
+    font-family: heebo-black;
+    src: url(../../font/heebo.black.ttf);
+}

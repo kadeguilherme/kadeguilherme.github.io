@@ -1,0 +1,15 @@
+.footer{
+    background: rgb(221, 221, 221);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    .footer-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+}

@@ -17,6 +17,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: var(--color-txt);
 }
 
 @font-face {
@@ -32,6 +33,11 @@ body {
 @font-face {
   font-family: heebo-medium;
   src: url(../../font/heebo.medium.ttf);
+}
+
+@font-face {
+  font-family: heebo-black;
+  src: url(../../font/heebo.black.ttf);
 }
 
 main {
@@ -198,7 +204,6 @@ header nav a {
 
 .jobs .cards-job .card-jobs p {
   font-size: 19px;
-  color: #21243D;
 }
 
 .jobs .cards-job .card-jobs .text-h3-job img {
@@ -209,7 +214,6 @@ header nav a {
   font-size: 17px;
   text-align: center;
   padding-top: 45px;
-  color: black;
 }
 
 @media (min-width: 900px) {
@@ -262,7 +266,7 @@ header nav a {
 }
 
 .card {
-  height: 500px;
+  height: 600px;
   border-radius: 4px;
   cursor: pointer;
   -webkit-box-orient: vertical;
@@ -297,8 +301,12 @@ header nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 60px;
+  padding-top: 30px;
   text-align: center;
+}
+
+.card .swiper .swiper-slide p {
+  padding-inline: 40px;
 }
 
 .card .swiper .swiper-slide img {
@@ -307,13 +315,162 @@ header nav a {
   background: white;
 }
 
-.card .swiper .swiper-slide .udemy {
+.card .swiper .swiper-slide .rotulo {
   width: 60px;
   height: 25px;
-  background: #2e2e2e;
+  background: #142850;
   border-radius: 20px;
   color: white;
   margin: 10px;
+  font-family: heebo-black;
+  font-size: 15px;
+  padding: 3px 9px 3px 9px;
+  margin-bottom: 30px;
+}
+
+.card .swiper .swiper-slide a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 30px;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #0154A0;
+  font-family: heebo-medium;
+}
+
+.card .dots .dot {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 50%;
+  margin-right: 2px;
+  margin-bottom: 5px;
+}
+
+.card .dots .active {
+  opacity: 100%;
+}
+
+@media (min-width: 900px) {
+  .card {
+    display: none;
+  }
+  .card .swiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.certificados {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .certificados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .certificados .certificado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 40px;
+    border: 1px solid #858585;
+    -webkit-box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.433);
+            box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.433);
+  }
+  .certificados .certificado .certificado-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .certificados .certificado .certificado-text h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .certificados .certificado .certificado-text a {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 20px;
+    font-family: heebo-medium;
+    text-decoration: none;
+    color: #0154A0;
+  }
+  .certificados .certificado .certificado-text .rotulo {
+    width: 90px;
+    height: 25px;
+    background: #142850;
+    border-radius: 20px;
+    color: white;
+    font-family: heebo-black;
+    font-size: 15px;
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .certificados .certificado .certificado-text p {
+    text-align: start;
+  }
+  .certificados .certificado img {
+    padding: 20px;
+    margin: 30px;
+  }
+}
+
+.footer {
+  background: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .footer-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
 }
 
 :root {
@@ -321,5 +478,6 @@ header nav a {
   --color-btn-link: #2797CF;
   --color-btn-cv: #FF6464;
   --color-bg-job: #EDF7FA;
+  --color-txt: #21243D;
 }
 /*# sourceMappingURL=estilo.css.map */
