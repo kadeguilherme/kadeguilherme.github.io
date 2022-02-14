@@ -84,7 +84,6 @@ const swiper = new Swiper('.swiper', {
             
             }else{
               num = num -1
-              console.log(num)
               dots[num].classList.add('active')
               dots[num+1].classList.remove('active')
             }
