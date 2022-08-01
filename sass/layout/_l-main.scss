@@ -65,6 +65,17 @@ main {
             font-family: heebo-bold;
             font-size: 16px;
             color: aliceblue;
+            transition-timing-function: ease-in-out;
+            transition-delay: 150ms;
+            transition-duration: 300ms;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover {
+         
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px; 
+                transition-duration: 300ms;
+                transform: scale(1.2);
+            }
+                
             @media (min-width:200px) and (max-width: 997px){
               
              }
@@ -72,6 +83,19 @@ main {
     }
     
     #avatar{
+        margin-left: 30px;
+            #imagem-avatar{
+            border-radius: 100%;
+            transition-timing-function: ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px; 
+            transform: rotatey(0deg);
+            transition-delay: 200ms;
+            &:hover {
+                transform: rotatey(360deg);
+                transition-duration: 650ms;
+                
+            }
+    }
              
         @media (min-width:200px) and (max-width: 997px){
           
