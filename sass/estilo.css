@@ -294,7 +294,6 @@ header nav a {
 .certificados .certificado {
   width: 94vw;
   height: 45vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px;
 }
 @media (min-width: 900px) {
   .certificados {
@@ -345,7 +344,6 @@ header nav a {
 }
 
 .footer {
-  background: rgb(221, 221, 221);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -355,9 +353,11 @@ header nav a {
 .footer .footer-img {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
-  margin-bottom: 20px;
+}
+.footer .footer-img img {
+  padding: 15px;
 }
 
 :root {

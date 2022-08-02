@@ -1,5 +1,5 @@
 .footer{
-    background: rgb(221, 221, 221);
+ //   background: rgb(221, 221, 221);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,8 +8,12 @@
     .footer-img{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: row;
-        margin-bottom: 20px;
+        
+        img{
+            padding: 15px;
+
+        }
     }
 }
