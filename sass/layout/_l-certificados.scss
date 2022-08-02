@@ -124,7 +124,7 @@
        // box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px;
      
     }
-    @media(min-width: 900px){
+    
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -177,5 +177,25 @@
             }
           
         }
-    }
+        @media (min-width:200px) and (max-width: 900px){
+            padding-bottom: 40px;
+            img{
+                display: none;
+            }
+            .certificado{
+                .certificado-text{
+                    h2{
+                        align-self: center;     
+                    }
+
+                    a{
+                        align-self: center;   
+                    }
+
+                }
+                .rotulo{
+                    align-self: center;
+                }
+            }
+        }
 }

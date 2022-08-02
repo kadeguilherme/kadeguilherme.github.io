@@ -293,56 +293,69 @@ header nav a {
 
 .certificados {
   display: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
 }
 .certificados .certificado {
   width: 94vw;
   height: 45vh;
 }
-@media (min-width: 900px) {
+.certificados .certificado {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+.certificados .certificado .certificado-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.certificados .certificado .certificado-text h2 {
+  align-self: flex-start;
+}
+.certificados .certificado .certificado-text a {
+  align-self: flex-end;
+  padding: 20px;
+  font-family: heebo-medium;
+  text-decoration: none;
+  color: #0154A0;
+}
+.certificados .certificado .certificado-text .rotulo {
+  width: 90px;
+  height: 25px;
+  background: #142850;
+  border-radius: 20px;
+  color: white;
+  font-family: heebo-black;
+  font-size: 15px;
+  padding: 3px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.certificados .certificado .certificado-text p {
+  text-align: start;
+}
+.certificados .certificado img {
+  padding: 20px;
+  margin: 30px;
+}
+@media (min-width: 200px) and (max-width: 900px) {
   .certificados {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
+    padding-bottom: 40px;
   }
-  .certificados .certificado {
-    display: flex;
-    flex-direction: row;
-    margin: 40px;
-  }
-  .certificados .certificado .certificado-text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  .certificados img {
+    display: none;
   }
   .certificados .certificado .certificado-text h2 {
-    align-self: flex-start;
+    align-self: center;
   }
   .certificados .certificado .certificado-text a {
-    align-self: flex-end;
-    padding: 20px;
-    font-family: heebo-medium;
-    text-decoration: none;
-    color: #0154A0;
+    align-self: center;
   }
-  .certificados .certificado .certificado-text .rotulo {
-    width: 90px;
-    height: 25px;
-    background: #142850;
-    border-radius: 20px;
-    color: white;
-    font-family: heebo-black;
-    font-size: 15px;
-    padding: 3px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .certificados .certificado .certificado-text p {
-    text-align: start;
-  }
-  .certificados .certificado img {
-    padding: 20px;
-    margin: 30px;
+  .certificados .certificado .rotulo {
+    align-self: center;
   }
 }
 
