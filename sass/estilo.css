@@ -55,11 +55,10 @@ main .conteudo p {
 }
 @media (min-width: 200px) and (max-width: 997px) {
   main .conteudo p {
-    font-size: 3.5vw;
+    font-size: 4vw;
     text-align: center;
     width: auto;
     padding-inline: 20px;
-    margin-bottom: 24px;
   }
 }
 main .conteudo #info {
@@ -70,7 +69,6 @@ main .conteudo #info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 }
 main .conteudo #info h1 {
@@ -120,8 +118,14 @@ main #avatar #imagem-avatar:hover {
 }
 @media (min-width: 200px) and (max-width: 997px) {
   main #avatar {
-    width: 80%;
+    display: flex;
+    margin-left: 0px;
+    width: 85%;
+    align-items: center;
     align-self: center;
+  }
+  main #avatar #imagem-avatar {
+    margin-bottom: 25px;
   }
 }
 
