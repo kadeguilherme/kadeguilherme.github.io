@@ -153,10 +153,6 @@ header nav a {
   }
 }
 
-.swiper {
-  width: 100%;
-}
-
 .jobs {
   background: var(--color-bg-job);
   align-items: center;
@@ -205,6 +201,21 @@ header nav a {
   .jobs .cards-job .card-jobs .text-jobs {
     padding-top: 10px;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
