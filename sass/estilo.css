@@ -153,10 +153,12 @@ header nav a {
   }
 }
 
+.swiper {
+  width: 100%;
+}
+
 .jobs {
   background: var(--color-bg-job);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 60px;
@@ -165,53 +167,39 @@ header nav a {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+.jobs .cards-job {
+  position: relative;
+}
 .jobs .cards-job .card-jobs {
+  display: flex;
+  flex-direction: column;
   background: rgb(253, 253, 253);
   padding: 20px;
-  min-height: 300px;
-  max-width: 400px;
   margin-bottom: 40px;
+  position: relative;
 }
-.jobs .cards-job .card-jobs p {
-  font-size: 19px;
-}
-.jobs .cards-job .card-jobs .text-h3-job img {
-  display: none;
+.jobs .cards-job .card-jobs .text-p-job {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.6;
 }
 .jobs .cards-job .card-jobs .text-jobs {
   font-size: 17px;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 25px;
 }
-@media (min-width: 900px) {
+@media (min-width: 200px) and (max-width: 997px) {
   .jobs .cards-job {
     display: flex;
-    flex-direction: row;
-    padding: 10px;
+    width: 100vw;
+    margin-bottom: 20px;
   }
   .jobs .cards-job .card-jobs {
-    margin: 15px;
-  }
-  .jobs .cards-job .card-jobs .text-h3-job {
-    display: flex;
-    justify-content: space-between;
+    margin: 0px;
     align-items: center;
   }
-  .jobs .cards-job .card-jobs .text-h3-job img {
-    height: 65px;
-    width: 65px;
-    display: flex;
-  }
-  .jobs .cards-job .card-jobs .text-h3-job #objetivo {
-    height: 65px;
-    width: 20vh;
-  }
-  .jobs .cards-job .card-jobs .text-p-job {
-    display: flex;
-    justify-content: start;
-  }
-  .jobs .cards-job .card-jobs .text-p-job p {
-    padding-right: 50px;
+  .jobs .cards-job .card-jobs .text-jobs {
+    padding-top: 10px;
   }
 }
 

@@ -1,74 +1,62 @@
+.swiper{
+    width: 100%;
+  }
+
 .jobs{
     background: var(--color-bg-job);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 60px;
-
-    
+  
     h1{
        margin-top: 40px;
        margin-bottom: 20px;
     }
 
     .cards-job{
+
+        position: relative;
         .card-jobs{
+   
+            display: flex;
+            flex-direction: column;
             background: rgb(253, 253, 253);
             padding: 20px;
-            min-height: 300px;
-            max-width: 400px;
-            margin-bottom: 40px;
-        
-                p{
-                    font-size: 19px;
-                  
-                }
 
-                .text-h3-job{
-                    img{
-                        display: none;
-                    }
-                }
-            
-                .text-jobs{
-                    font-size: 17px;
-                    text-align: center;
-                    padding-top:45px ;
-               
-                }
+            margin-bottom: 40px;
+            position: relative;
+
+            .text-p-job{
+                font-size: 15px;
+                font-weight: 600;   
+                opacity: 0.6;
+            }
+
+            .text-jobs{
+                font-size: 17px;
+                text-align: center;
+                padding-top: 25px ;        
+            }
         }
 }
 
-    @media(min-width: 900px){
+    @media (min-width:200px) and (max-width: 997px){
       
         .cards-job{
             display: flex;
-            flex-direction: row;
-            padding: 10px;
+          
+       
+            width: 100vw;
+            margin-bottom: 20px; 
             .card-jobs{
-                margin:15px;
-                .text-h3-job{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    img{
-                        height: 65px;
-                        width: 65px;
-                       display: flex;
-                    }
-                    #objetivo{
-                        height: 65px;
-                        width: 20vh;
-                    }
-                }
-                .text-p-job{
-                    display: flex;
-                    justify-content: start;
-                    p{
-                       
-                        padding-right:50px;
-                    }
+                margin: 0px;
+              
+                align-items: center;
+
+                .text-jobs{
+                    
+                    padding-top:10px ;
+               
                 }
             }
         }
