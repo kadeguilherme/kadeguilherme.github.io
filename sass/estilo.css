@@ -170,6 +170,7 @@ header nav a {
 .jobs .cards-job {
   position: relative;
   margin-bottom: 45px;
+  min-width: 248px;
 }
 .jobs .cards-job .card-jobs {
   display: flex;
