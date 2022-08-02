@@ -169,18 +169,22 @@ header nav a {
 }
 .jobs .cards-job {
   position: relative;
+  margin-bottom: 45px;
 }
 .jobs .cards-job .card-jobs {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   background: rgb(253, 253, 253);
   padding: 20px;
-  margin-bottom: 40px;
-  position: relative;
 }
 .jobs .cards-job .card-jobs .text-p-job {
   font-size: 15px;
   font-weight: 600;
+}
+.jobs .cards-job .card-jobs .text-p-job p {
   opacity: 0.6;
 }
 .jobs .cards-job .card-jobs .text-jobs {
@@ -195,7 +199,6 @@ header nav a {
     margin-bottom: 20px;
   }
   .jobs .cards-job .card-jobs {
-    margin: 0px;
     align-items: center;
   }
   .jobs .cards-job .card-jobs .text-jobs {

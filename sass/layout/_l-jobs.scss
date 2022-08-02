@@ -3,6 +3,7 @@
   }
 
 .jobs{
+    
     background: var(--color-bg-job);
     align-items: center;
     text-align: center;
@@ -14,22 +15,24 @@
     }
 
     .cards-job{
-
         position: relative;
-        .card-jobs{
-   
+        margin-bottom: 45px;
+        .card-jobs{     
+            display: flex;
+            justify-content: space-evenly;
+            min-height: 400px;
             display: flex;
             flex-direction: column;
             background: rgb(253, 253, 253);
             padding: 20px;
-
-            margin-bottom: 40px;
-            position: relative;
+        
 
             .text-p-job{
                 font-size: 15px;
-                font-weight: 600;   
-                opacity: 0.6;
+                font-weight: 600;  
+                p{
+                    opacity: 0.6;
+                } 
             }
 
             .text-jobs{
@@ -49,7 +52,7 @@
             width: 100vw;
             margin-bottom: 20px; 
             .card-jobs{
-                margin: 0px;
+                // margin: 0px;
               
                 align-items: center;
 
