@@ -17,4 +17,11 @@
     background: #000000;
   }
 
-  
+  .swiper-slide .card-jobs .swiper-slide-prev .swiper-slide-duplicate-next { 
+    display: none;
+    background: #000;
+      width: 0px;
+      margin-right: 0px;
+    
+   
+  }

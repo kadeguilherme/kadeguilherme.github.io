@@ -12,8 +12,22 @@
         flex-direction: row;
         
         img{
-            padding: 15px;
+            padding: 12px;
+            width: 45px;
+          
+        }
 
+    }
+
+    @media (min-width:200px) and (max-width: 900px){
+        .footer-img{
+            display: flex;
+            align-self: center;
+            width: 60vw;
+            img{
+              
+                width: 2.4em;
+            }
         }
     }
 

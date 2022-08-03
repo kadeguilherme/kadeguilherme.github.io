@@ -183,7 +183,12 @@
                 display: none;
             }
             .certificado{
+                margin: 0px;
+                margin-bottom: 105px;
                 .certificado-text{
+                    p{
+                        text-align: center;
+                    }
                     h2{
                         align-self: center;     
                     }

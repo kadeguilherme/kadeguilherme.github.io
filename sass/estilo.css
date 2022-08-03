@@ -186,6 +186,7 @@ header nav a {
   min-width: 248px;
 }
 .jobs .cards-job .card-jobs {
+  width: 0px;
   display: flex;
   justify-content: space-evenly;
   min-height: 400px;
@@ -365,6 +366,13 @@ header nav a {
   .certificados img {
     display: none;
   }
+  .certificados .certificado {
+    margin: 0px;
+    margin-bottom: 105px;
+  }
+  .certificados .certificado .certificado-text p {
+    text-align: center;
+  }
   .certificados .certificado .certificado-text h2 {
     align-self: center;
   }
@@ -390,7 +398,18 @@ header nav a {
   flex-direction: row;
 }
 .footer .footer-img img {
-  padding: 15px;
+  padding: 12px;
+  width: 45px;
+}
+@media (min-width: 200px) and (max-width: 900px) {
+  .footer .footer-img {
+    display: flex;
+    align-self: center;
+    width: 60vw;
+  }
+  .footer .footer-img img {
+    width: 2.4em;
+  }
 }
 .footer .footer1 {
   display: flex;
