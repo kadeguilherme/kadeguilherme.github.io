@@ -6,10 +6,8 @@
  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/estilo.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    
 
 
     <style>
@@ -32,7 +30,6 @@
     background: #000000;
   }
     
-  
       </style>
     
     <title>Portfólio</title>
@@ -57,7 +54,16 @@
             <!--Conteudo-->
             <div id="avatar">
                 <img id="imagem-avatar" src="img/AVATAR.svg" alt="">
-                <img src="img/aws-certified-cloud-practitioner.png" width="100px" alt="" >
+                
+                <div class="selos">
+                    <img src="img/aws-certified-cloud-practitioner.png" width="100px" alt="" >
+                    <img src="img/CICD.png" width="100px" alt="">
+                    <img src="img/Terrafom.png" width="100px" alt="">
+                    <img src="img/Docker.png" width="100px" alt="">
+                    <img src="img/Kubernetes.png" width="100px" alt="" srcset="">
+                    <img src="img/Docker1.png" width="100px" alt="">
+                </div>
+                
             </div>
             <div id="info">
                 <!--INFO-->
@@ -122,13 +128,15 @@
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination1"></div>
+        <!-- <div class="swiper-pagination1"></div> -->
     </div>
     <!--JOBS FIM-->
 
 
     <!--CERTIFICADO WEB-->
-    <div class="swiper mySwiper1">
+
+
+        <div class="swiper mySwiper1">
 
             <div class="swiper-wrapper">
 
@@ -198,25 +206,20 @@
         
                 
                 </div>
- <!--
-              <div class="swiper-slide">Slide 2</div>
-             
+              <!-- <div class="swiper-slide">Slide 2</div>
               <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-            -->
+              <div class="swiper-slide">Slide 4</div> -->
             </div>
-            
             <div class="swiper-pagination">
-
+                
             </div>
-            <div class="swiper-pagination"></div>
-          
-    </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
   
 
 
 
-    <footer class="footer">
+       <footer class="footer">
         <a id = "footer1" ></a>
         <div class="footer-img">
         <a href="https://www.linkedin.com/in/guilherme-aguiarr/" target="_blank" rel="noreferrer noopener">
@@ -242,7 +245,9 @@
     </footer>
 
 
-   
+
+       <!-- Swiper JS -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
        <!-- Initialize Swiper -->
        <script>
@@ -265,7 +270,10 @@
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
-     
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

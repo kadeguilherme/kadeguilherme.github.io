@@ -102,10 +102,10 @@ main .conteudo button:hover {
 }
 main #avatar {
   flex-direction: column;
-  margin-left: 30px;
 }
 main #avatar #imagem-avatar {
-  width: 105%;
+  width: 26vw;
+  margin-left: 20vh;
   border-radius: 100%;
   transition-timing-function: ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px;
@@ -116,6 +116,9 @@ main #avatar #imagem-avatar:hover {
   transform: rotatey(360deg);
   transition-duration: 650ms;
 }
+main #avatar .selos {
+  margin-top: 20px;
+}
 @media (min-width: 200px) and (max-width: 997px) {
   main #avatar {
     display: flex;
@@ -125,7 +128,11 @@ main #avatar #imagem-avatar:hover {
     align-self: center;
   }
   main #avatar #imagem-avatar {
+    width: 85%;
     margin-bottom: 25px;
+  }
+  main #avatar .selos {
+    display: none;
   }
 }
 
