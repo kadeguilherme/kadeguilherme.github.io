@@ -382,6 +382,15 @@ header nav a {
 .footer .footer-img img {
   padding: 15px;
 }
+.footer .footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer .footer1 img {
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
 :root {
   --color-btn-git: #000000;
