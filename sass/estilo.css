@@ -34,6 +34,12 @@ main {
   padding-left: 40px;
   padding-right: 40px;
 }
+@media (min-width: 200px) and (max-width: 997px) {
+  main {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
 main .conteudo {
   margin-top: 60px;
   display: flex;
@@ -69,6 +75,9 @@ main .conteudo #info {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  main .conteudo #info p {
+    padding-inline: 0;
   }
 }
 main .conteudo #info h1 {
@@ -128,6 +137,7 @@ main #avatar .selos {
     align-self: center;
   }
   main #avatar #imagem-avatar {
+    margin-left: 0;
     width: 85%;
     margin-bottom: 25px;
   }
