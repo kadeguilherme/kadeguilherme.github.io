@@ -400,6 +400,15 @@ header nav a {
 .footer .footer-img img {
   padding: 12px;
   width: 45px;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+  transition-duration: 300ms;
+  border-radius: 100%;
+}
+.footer .footer-img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px;
+  transition-duration: 300ms;
+  transform: scale(1.2);
 }
 @media (min-width: 200px) and (max-width: 900px) {
   .footer .footer-img {
